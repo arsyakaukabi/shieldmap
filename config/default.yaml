@@ -1,0 +1,162 @@
+# shieldmap Phase 1 configuration.
+#
+# Every leaf parameter is a mapping with:
+#   value | ref   the value itself, or `ref: sources/<file>.yaml#<key.path>` resolving into a source record
+#   tag           PHYS  = fixed by physics or by definition (incl. project-scope and numerical definitions)
+#                 STD   = taken once from a cited standard; the record lives in config/sources/
+#                 SWEEP = a modelling choice; always a list of >= 2 values that is evaluated in full
+#   source        where the value comes from (citation, handover section, or definition)
+# Optional: primary (for SWEEP: the value the handover names as primary; it must be in the list).
+# There are no cross-criterion weights anywhere in Phase 1.
+
+energy_grid:
+  linear_min_keV:
+    value: 10.0
+    tag: PHYS
+    source: "definition: lower bound of project scope (handover §2, §6)"
+  linear_max_keV:
+    value: 200.0
+    tag: PHYS
+    source: "definition: end of fine linear segment (handover §6)"
+  linear_step_keV:
+    value: 0.5
+    tag: PHYS
+    source: "numerical definition (handover §6); bin-centring convergence tested in step 2"
+  log_max_keV:
+    value: 15000.0
+    tag: PHYS
+    source: "definition: upper bound of project scope (handover §2, §6)"
+  log_n_points:
+    value: 150
+    tag: PHYS
+    source: "numerical definition (handover §6: ~150 log points from 200 keV to 15 MeV)"
+  anchor_energies_keV:
+    value: [300.0, 400.0, 500.0, 600.0, 800.0, 1000.0, 1250.0, 1500.0, 2000.0, 3000.0, 4000.0,
+            5000.0, 6000.0, 8000.0, 10000.0, 15000.0]
+    tag: STD
+    source: "standard energy grid of NIST XCOM / SRD 126 above 200 keV (ENB.DAT in sources/nist_xcom.yaml); added so validation compares at tabulated energies"
+  min_separation_rel:
+    value: 0.002
+    tag: PHYS
+    source: "numerical definition: a log point closer than 0.2 % to an anchor or key line is dropped"
+
+radionuclides:
+  Cs-137:
+    ref: "sources/ensdf_cs137.yaml#data.lines_used"
+    tag: STD
+    source: "NNDC ENSDF, 137Cs beta-minus decay dataset (see sources/ensdf_cs137.yaml)"
+  Co-60:
+    ref: "sources/ensdf_co60.yaml#data.lines_used"
+    tag: STD
+    source: "NNDC ENSDF, 60Co beta-minus decay dataset (see sources/ensdf_co60.yaml)"
+
+xray_tubes:
+  anode:
+    value: W
+    tag: PHYS
+    source: "definition: tungsten-anode diagnostic tubes (handover §5.1)"
+  qualities:
+    ref: "sources/rqr_trs457.yaml#data.used"
+    tag: STD
+    source: "IEC 61267 RQR 5/6/8/9 as tabulated in IAEA TRS-457 (2007) Table 6.2"
+  hvl_match_tolerance_rel:
+    value: 0.02
+    tag: PHYS
+    source: "definition: SpekPy first HVL must match the standard HVL within ±2 % (handover §5.1)"
+  anode_angle_deg:
+    value: [10.0, 12.0, 16.0]
+    tag: SWEEP
+    source: "modelling choice (handover §5.1)"
+  spekpy_dk_keV:
+    value: 0.25
+    tag: PHYS
+    source: "numerical definition: SpekPy cells of 0.25 keV (two per 0.5 keV grid bin), split at every element edge for the transmission quadrature (DECISIONS D-013); converged to <1e-5 against 5x subdivision"
+  spekpy_physics:
+    value: default
+    tag: PHYS
+    source: "definition: SpekPy 2.5.4 default physics model and mu data; no air path (z = 100 cm, fluence in vacuum)"
+
+response:
+  functions:
+    value: [air_kerma, fluence, energy_fluence]
+    primary: air_kerma
+    tag: SWEEP
+    source: "handover §5.1: primary air kerma R = E·(μen/ρ)_air [PHYS]; variants R = 1 and R = E"
+  air_muen:
+    ref: "sources/nist_srd126.yaml#data.air"
+    tag: STD
+    source: "NIST SRD 126 (Hubbell & Seltzer), Table 4, air (dry, near sea level)"
+
+targets:
+  diagnostic_pb_mm:
+    value: [0.25, 0.35, 0.50]
+    tag: SWEEP
+    source: "handover §5.1"
+  radionuclide_transmission:
+    value: [0.5, 0.1, 0.01, 0.001]
+    tag: SWEEP
+    source: "handover §5.1"
+
+coherent:
+  include:
+    value: [true, false]
+    primary: true
+    tag: SWEEP
+    source: "handover §5.1: total attenuation with (primary) and without coherent scattering"
+
+reference_material:
+  lead_density_source:
+    value: pymatgen_density_of_solid
+    tag: STD
+    source: "experimental solid density of Pb from pymatgen Element data (P1; record sources/pymatgen_elements.yaml); Pb-relative quantities refer to a lead sheet of this density (DECISIONS D-011)"
+
+solver:
+  method:
+    value: brent
+    tag: PHYS
+    source: "handover §6: T(x) = Σ w e^(−μx)/Σ w solved with Brent's method"
+  xtol_rel:
+    value: 1.0e-10
+    tag: PHYS
+    source: "numerical definition (relative tolerance on thickness)"
+
+elements:
+  z_max:
+    value: 100
+    tag: PHYS
+    source: "definition: Z = 1–100 (handover §4, Table A)"
+  radioactive_rule:
+    value: "no stable isotope: Tc (43), Pm (61), Z >= 84; Bi (83) treated as stable"
+    tag: PHYS
+    source: "definition (handover §4)"
+  noble_gases:
+    value: [He, Ne, Ar, Kr, Xe, Rn]
+    tag: PHYS
+    source: "definition (handover §4)"
+  crustal_abundance:
+    ref: "sources/crustal_abundance.yaml#citation"
+    tag: STD
+    source: "CRC Handbook table as shipped by mendeleev (see sources/crustal_abundance.yaml)"
+
+key_energies_keV:
+  value: [20.0, 60.0, 100.0, 661.657, 1000.0, 1173.228, 1332.492]
+  tag: PHYS
+  source: "definition: energies at which partial cross sections and μ/HVL/TVL/MFP are tabulated per compound (handover §4 Table C; step 2 test energies; decay lines from ENSDF)"
+
+thresholds_later_phases:
+  energy_above_hull_eV_per_atom:
+    value: [0.0, 0.025, 0.05, 0.1]
+    tag: SWEEP
+    source: "handover §5.2 (grid only; nothing is applied in Phase 1)"
+  band_gap_eV:
+    value: [2.5, 3.1, 3.5]
+    tag: SWEEP
+    source: "handover §5.2 (PBE underestimates gaps)"
+  visible_edge_eV:
+    value: 3.1
+    tag: PHYS
+    source: "physics: 400 nm photon energy, hc/λ = 1239.84 eV·nm / 400 nm = 3.0996 eV"
+  scarcity_axis:
+    value: "continuous log10 crustal abundance; no threshold"
+    tag: PHYS
+    source: "definition (handover §5.2)"

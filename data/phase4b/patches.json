@@ -1,0 +1,37 @@
+{
+ "fig2": 6132,
+ "fig3": {
+  "n": 519,
+  "mc": 10
+ },
+ "fig4": {
+  "by_variant": 36,
+  "mc": 10,
+  "families": 13420,
+  "textbook": 20,
+  "plateau": 2
+ },
+ "h72_noh": {
+  "median": 0.03377253740343367,
+  "min": 0.009203634118742698,
+  "max": 0.03478253429580147,
+  "e_min": 2347.9876975364277,
+  "e_max": 211.93300850841143,
+  "delta_median_g_cm2": 0.13181686050241415,
+  "median_all": 0.03398331773143304,
+  "max_all": 0.133223864737684,
+  "frontier_noH_at_max_all": "Bi",
+  "frontier_all_at_max_all": "H5NO",
+  "pb_mpid": "mp-20483"
+ },
+ "tl_axis": {
+  "max_price": 0.05128586932575274,
+  "at_keV": 90.5,
+  "T": 0.1,
+  "pair": "Pb → Hg",
+  "band_lo": 0.031215202272062426,
+  "band_hi": 0.05128586932575274,
+  "certified": true
+ },
+ "noh_from_keV": 800.0
+}

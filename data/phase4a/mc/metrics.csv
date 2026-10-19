@@ -1,0 +1,181 @@
+case,case_id,metric,num,den,estimator,basis,value,se,inside_bracket
+1,c1_cs137,GAP(3.1) given B4 thickness price (Cs-137),BiOF,Ir,T_tablec,thickness,1.3458122050503412,,True
+1,c1_cs137,GAP(3.1) given B4 thickness price (Cs-137),BiOF,Ir,T_endf_narrow,thickness,1.3464059547599536,,True
+1,c1_cs137,GAP(3.1) given B4 thickness price (Cs-137),BiOF,Ir,T_firstorder,thickness,1.3459440513352479,,True
+1,c1_cs137,GAP(3.1) given B4 thickness price (Cs-137),BiOF,Ir,T_firstorder_nocohlines,thickness,1.345964815932322,,True
+1,c1_cs137,GAP(3.1) given B4 thickness price (Cs-137),BiOF,Ir,narrow,thickness,1.346338065231485,0.0007888075460910667,True
+1,c1_cs137,GAP(3.1) given B4 thickness price (Cs-137),BiOF,Ir,cone1,thickness,1.3444936195395751,0.0007453538391973514,True
+1,c1_cs137,GAP(3.1) given B4 thickness price (Cs-137),BiOF,Ir,cone3,thickness,1.3421958633381013,0.0007404769819270558,True
+1,c1_cs137,GAP(3.1) given B4 thickness price (Cs-137),BiOF,Ir,fl,thickness,1.3471456248943423,0.0007919345372833282,True
+1,c1_cs137,GAP(3.1) given B4 thickness price (Cs-137),BiOF,Ir,fl_all,thickness,1.3471363677190973,0.0007785025795586514,True
+1,c1_cs137,GAP(3.1) given B4 thickness price (Cs-137),BiOF,Ir,broad,thickness,1.3281890645511036,0.0004880073765004703,True
+1,c1_cs137,GAP(3.1) given B4 thickness price (Cs-137),BiOF,Ir,broad_hi,thickness,1.3280356393260297,0.0004959582918859481,True
+1,c1_cs137,GAP(3.1) given B4 thickness price (Cs-137),BiOF,Ir,broad_grazing_cut,thickness,1.3282074725345838,0.00048808191728057796,True
+1,c1_cs137,HfO2 vs Ir thickness,HfO2,Ir,T_tablec,thickness,1.484094682607207,,True
+1,c1_cs137,HfO2 vs Ir thickness,HfO2,Ir,T_endf_narrow,thickness,1.4828622007773125,,True
+1,c1_cs137,HfO2 vs Ir thickness,HfO2,Ir,T_firstorder,thickness,1.484025799213935,,True
+1,c1_cs137,HfO2 vs Ir thickness,HfO2,Ir,T_firstorder_nocohlines,thickness,1.4840151106664763,,True
+1,c1_cs137,HfO2 vs Ir thickness,HfO2,Ir,narrow,thickness,1.4841036298422057,0.0007948581214539254,True
+1,c1_cs137,HfO2 vs Ir thickness,HfO2,Ir,cone1,thickness,1.4818379301318032,0.00074802566744991,True
+1,c1_cs137,HfO2 vs Ir thickness,HfO2,Ir,cone3,thickness,1.475370347834001,0.0007762550889391045,True
+1,c1_cs137,HfO2 vs Ir thickness,HfO2,Ir,fl,thickness,1.4838865653863094,0.0008111425610711133,True
+1,c1_cs137,HfO2 vs Ir thickness,HfO2,Ir,fl_all,thickness,1.4838014404537514,0.0007760903917149521,True
+1,c1_cs137,HfO2 vs Ir thickness,HfO2,Ir,broad,thickness,1.5448659218338783,0.00047354615239978494,True
+1,c1_cs137,HfO2 vs Ir thickness,HfO2,Ir,broad_hi,thickness,1.544877494613612,0.0004826442001060685,True
+1,c1_cs137,HfO2 vs Ir thickness,HfO2,Ir,broad_grazing_cut,thickness,1.544935644241042,0.00047797534056865623,True
+1,c1_cs137,HfO2 vs BiOF thickness,HfO2,BiOF,T_tablec,thickness,0.058948656358405405,,True
+1,c1_cs137,HfO2 vs BiOF thickness,HfO2,BiOF,T_endf_narrow,thickness,0.058155429473123244,,True
+1,c1_cs137,HfO2 vs BiOF thickness,HfO2,BiOF,T_firstorder,thickness,0.05885977877438919,,True
+1,c1_cs137,HfO2 vs BiOF thickness,HfO2,BiOF,T_firstorder_nocohlines,thickness,0.0588458504563254,,True
+1,c1_cs137,HfO2 vs BiOF thickness,HfO2,BiOF,narrow,thickness,0.0587151385608744,0.0003047201313283016,True
+1,c1_cs137,HfO2 vs BiOF thickness,HfO2,BiOF,cone1,thickness,0.05858165253578318,0.0002917335688437842,True
+1,c1_cs137,HfO2 vs BiOF thickness,HfO2,BiOF,cone3,thickness,0.056858816369908194,0.0002920392925748073,True
+1,c1_cs137,HfO2 vs BiOF thickness,HfO2,BiOF,fl,thickness,0.05825839651432907,0.0003144289530280777,True
+1,c1_cs137,HfO2 vs BiOF thickness,HfO2,BiOF,fl_all,thickness,0.05822630274672225,0.00031648888288643846,True
+1,c1_cs137,HfO2 vs BiOF thickness,HfO2,BiOF,broad,thickness,0.09306669315730698,0.0002148681391174833,True
+1,c1_cs137,HfO2 vs BiOF thickness,HfO2,BiOF,broad_hi,thickness,0.09314370090586688,0.00020937035614095707,True
+1,c1_cs137,HfO2 vs BiOF thickness,HfO2,BiOF,broad_grazing_cut,thickness,0.0930879976390242,0.00021654716646069902,True
+3,c3_rqr5,advantage Bi/LaBi − 1 (R3.1 knife edge),Bi,LaBi,T_tablec,areal,0.15259209633434212,,True
+3,c3_rqr5,advantage Bi/LaBi − 1 (R3.1 knife edge),Bi,LaBi,T_endf_narrow,areal,0.15451510515360733,,True
+3,c3_rqr5,advantage Bi/LaBi − 1 (R3.1 knife edge),Bi,LaBi,T_firstorder,areal,0.10462694010298179,,True
+3,c3_rqr5,advantage Bi/LaBi − 1 (R3.1 knife edge),Bi,LaBi,T_firstorder_nocohlines,areal,0.10091372474186588,,True
+3,c3_rqr5,advantage Bi/LaBi − 1 (R3.1 knife edge),Bi,LaBi,narrow,areal,0.15452656440848744,0.0004990968103736254,True
+3,c3_rqr5,advantage Bi/LaBi − 1 (R3.1 knife edge),Bi,LaBi,cone1,areal,0.15459924248002976,0.0005017395752921638,True
+3,c3_rqr5,advantage Bi/LaBi − 1 (R3.1 knife edge),Bi,LaBi,cone3,areal,0.1550653266884725,0.0005178728675304098,True
+3,c3_rqr5,advantage Bi/LaBi − 1 (R3.1 knife edge),Bi,LaBi,fl,areal,0.08540204313747157,0.0024947732161247223,True
+3,c3_rqr5,advantage Bi/LaBi − 1 (R3.1 knife edge),Bi,LaBi,fl_all,areal,0.10258231554293107,0.0038522916226008683,True
+3,c3_rqr5,advantage Bi/LaBi − 1 (R3.1 knife edge),Bi,LaBi,broad,areal,0.13478642942193986,0.004383271218689984,True
+3,c3_rqr5,advantage Bi/LaBi − 1 (R3.1 knife edge),Bi,LaBi,broad_hi,areal,0.11580302388834074,0.00210495771968901,True
+3,c3_rqr5,advantage Bi/LaBi − 1 (R3.1 knife edge),Bi,LaBi,broad_grazing_cut,areal,0.1345891029766797,0.004399123735289008,True
+3,c3_rqr5,Pb/LaBi − 1,Pb,LaBi,T_tablec,areal,0.20084972056634975,,True
+3,c3_rqr5,Pb/LaBi − 1,Pb,LaBi,T_endf_narrow,areal,0.20359752659603236,,True
+3,c3_rqr5,Pb/LaBi − 1,Pb,LaBi,T_firstorder,areal,0.14718928468142378,,True
+3,c3_rqr5,Pb/LaBi − 1,Pb,LaBi,T_firstorder_nocohlines,areal,0.14307156136883536,,True
+3,c3_rqr5,Pb/LaBi − 1,Pb,LaBi,narrow,areal,0.20388526881726787,0.0006593498726070517,True
+3,c3_rqr5,Pb/LaBi − 1,Pb,LaBi,cone1,areal,0.20395079943533267,0.0006596488824558943,True
+3,c3_rqr5,Pb/LaBi − 1,Pb,LaBi,cone3,areal,0.20476613631769758,0.0006376482221878735,True
+3,c3_rqr5,Pb/LaBi − 1,Pb,LaBi,fl,areal,0.1269233661962994,0.002284093735406225,True
+3,c3_rqr5,Pb/LaBi − 1,Pb,LaBi,fl_all,areal,0.1411840751062341,0.004936187330926056,True
+3,c3_rqr5,Pb/LaBi − 1,Pb,LaBi,broad,areal,0.17995817607086573,0.005437710531164066,True
+3,c3_rqr5,Pb/LaBi − 1,Pb,LaBi,broad_hi,areal,0.16091941170307855,0.0020725017944144978,True
+3,c3_rqr5,Pb/LaBi − 1,Pb,LaBi,broad_grazing_cut,areal,0.18037398890977618,0.0054479309875104165,True
+3,c3_rqr5,Bi/PrSbPd − 1,Bi,PrSbPd,T_tablec,areal,0.20813291374245013,,True
+3,c3_rqr5,Bi/PrSbPd − 1,Bi,PrSbPd,T_endf_narrow,areal,0.21082067005975236,,True
+3,c3_rqr5,Bi/PrSbPd − 1,Bi,PrSbPd,T_firstorder,areal,0.09080639388850553,,True
+3,c3_rqr5,Bi/PrSbPd − 1,Bi,PrSbPd,T_firstorder_nocohlines,areal,0.08479149148940968,,True
+3,c3_rqr5,Bi/PrSbPd − 1,Bi,PrSbPd,narrow,areal,0.21037659342152493,0.0008356312995526727,True
+3,c3_rqr5,Bi/PrSbPd − 1,Bi,PrSbPd,cone1,areal,0.210377992766277,0.0008344969964145157,True
+3,c3_rqr5,Bi/PrSbPd − 1,Bi,PrSbPd,cone3,areal,0.21042062076701074,0.0009130311525456928,True
+3,c3_rqr5,Bi/PrSbPd − 1,Bi,PrSbPd,fl,areal,0.014925725194955497,0.0021816670362035566,True
+3,c3_rqr5,Bi/PrSbPd − 1,Bi,PrSbPd,fl_all,areal,0.03719863079486352,0.0028687383548011516,True
+3,c3_rqr5,Bi/PrSbPd − 1,Bi,PrSbPd,broad,areal,0.08807884538871424,0.0039033369901668997,True
+3,c3_rqr5,Bi/PrSbPd − 1,Bi,PrSbPd,broad_hi,areal,0.06425612951502435,0.0019221742698779074,True
+3,c3_rqr5,Bi/PrSbPd − 1,Bi,PrSbPd,broad_grazing_cut,areal,0.08871622631221565,0.003700140346080881,True
+3,c3_rqr5,PrSbPd/LaBi − 1,PrSbPd,LaBi,T_tablec,areal,-0.045972439601913107,,True
+3,c3_rqr5,PrSbPd/LaBi − 1,PrSbPd,LaBi,T_endf_narrow,areal,-0.04650198522244131,,True
+3,c3_rqr5,PrSbPd/LaBi − 1,PrSbPd,LaBi,T_firstorder,areal,0.012670026772770182,,True
+3,c3_rqr5,PrSbPd/LaBi − 1,PrSbPd,LaBi,T_firstorder_nocohlines,areal,0.014862057251500582,,True
+3,c3_rqr5,PrSbPd/LaBi − 1,PrSbPd,LaBi,narrow,areal,-0.04614268758714102,0.0006481988823352028,True
+3,c3_rqr5,PrSbPd/LaBi − 1,PrSbPd,LaBi,cone1,areal,-0.04608374459846798,0.0006365572493677389,True
+3,c3_rqr5,PrSbPd/LaBi − 1,PrSbPd,LaBi,cone3,areal,-0.045732279447999624,0.0006980328638008873,True
+3,c3_rqr5,PrSbPd/LaBi − 1,PrSbPd,LaBi,fl,areal,0.0694398774146534,0.0018360198175405937,True
+3,c3_rqr5,PrSbPd/LaBi − 1,PrSbPd,LaBi,fl_all,areal,0.06303873029408114,0.0031292265737491187,True
+3,c3_rqr5,PrSbPd/LaBi − 1,PrSbPd,LaBi,broad,areal,0.04292665391958761,0.0029272769520706328,True
+3,c3_rqr5,PrSbPd/LaBi − 1,PrSbPd,LaBi,broad_hi,areal,0.048434669948113074,0.0017340716495393052,True
+3,c3_rqr5,PrSbPd/LaBi − 1,PrSbPd,LaBi,broad_grazing_cut,areal,0.04213483326123302,0.0027651388742856984,True
+3,c3_rqr5,Pb/Bi − 1,Pb,Bi,T_tablec,areal,0.04186877941075973,,True
+3,c3_rqr5,Pb/Bi − 1,Pb,Bi,T_endf_narrow,areal,0.04251345107857629,,True
+3,c3_rqr5,Pb/Bi − 1,Pb,Bi,T_firstorder,areal,0.03853096736394468,,True
+3,c3_rqr5,Pb/Bi − 1,Pb,Bi,T_firstorder_nocohlines,areal,0.03829349719193864,,True
+3,c3_rqr5,Pb/Bi − 1,Pb,Bi,narrow,areal,0.04275233323372585,0.0005850583741414607,True
+3,c3_rqr5,Pb/Bi − 1,Pb,Bi,cone1,areal,0.04274345170130034,0.000599228233209977,True
+3,c3_rqr5,Pb/Bi − 1,Pb,Bi,cone3,areal,0.04302857031620477,0.0005845050616708991,True
+3,c3_rqr5,Pb/Bi − 1,Pb,Bi,fl,areal,0.03825432550210239,0.0024964282645773875,True
+3,c3_rqr5,Pb/Bi − 1,Pb,Bi,fl_all,areal,0.03501031988191716,0.004353779428213988,True
+3,c3_rqr5,Pb/Bi − 1,Pb,Bi,broad,areal,0.039806386010393435,0.0053252303304143845,True
+3,c3_rqr5,Pb/Bi − 1,Pb,Bi,broad_hi,areal,0.04043400748056447,0.0020049635668543493,True
+3,c3_rqr5,Pb/Bi − 1,Pb,Bi,broad_grazing_cut,areal,0.04035371555479994,0.00528563397714647,True
+2,c2_co60,GAP(3.1) given B4 thickness price (Co-60),HfO2,Ir,T_tablec,thickness,1.3034730369401326,,True
+2,c2_co60,GAP(3.1) given B4 thickness price (Co-60),HfO2,Ir,T_endf_narrow,thickness,1.3019857964678563,,True
+2,c2_co60,GAP(3.1) given B4 thickness price (Co-60),HfO2,Ir,T_firstorder,thickness,1.3034633342324953,,True
+2,c2_co60,GAP(3.1) given B4 thickness price (Co-60),HfO2,Ir,T_firstorder_nocohlines,thickness,1.3034618471365027,,True
+2,c2_co60,GAP(3.1) given B4 thickness price (Co-60),HfO2,Ir,narrow,thickness,1.3014433452917942,0.0005905424905641445,True
+2,c2_co60,GAP(3.1) given B4 thickness price (Co-60),HfO2,Ir,cone1,thickness,1.2976037929564335,0.0005645967274187957,True
+2,c2_co60,GAP(3.1) given B4 thickness price (Co-60),HfO2,Ir,cone3,thickness,1.2944981092947998,0.0005426568233040539,True
+2,c2_co60,GAP(3.1) given B4 thickness price (Co-60),HfO2,Ir,fl,thickness,1.301349464194839,0.000584864256522941,True
+2,c2_co60,GAP(3.1) given B4 thickness price (Co-60),HfO2,Ir,fl_all,thickness,1.3013285642431818,0.0005961035230280372,True
+2,c2_co60,GAP(3.1) given B4 thickness price (Co-60),HfO2,Ir,broad,thickness,1.3492805276207447,0.0004265496947567037,True
+2,c2_co60,GAP(3.1) given B4 thickness price (Co-60),HfO2,Ir,broad_hi,thickness,1.3492722664768988,0.0004310412569543665,True
+2,c2_co60,GAP(3.1) given B4 thickness price (Co-60),HfO2,Ir,broad_grazing_cut,thickness,1.3493006753803582,0.0004298290713606639,True
+4,c4_rqr8,advantage Bi/Pr3OsI3 − 1,Bi,Pr3OsI3,T_tablec,areal,0.40414417515222234,,True
+4,c4_rqr8,advantage Bi/Pr3OsI3 − 1,Bi,Pr3OsI3,T_endf_narrow,areal,0.4183757330546385,,True
+4,c4_rqr8,advantage Bi/Pr3OsI3 − 1,Bi,Pr3OsI3,T_firstorder,areal,0.2720479281909558,,True
+4,c4_rqr8,advantage Bi/Pr3OsI3 − 1,Bi,Pr3OsI3,T_firstorder_nocohlines,areal,0.26523415404397976,,True
+4,c4_rqr8,advantage Bi/Pr3OsI3 − 1,Bi,Pr3OsI3,narrow,areal,0.4171300520001622,0.0008666382411989922,True
+4,c4_rqr8,advantage Bi/Pr3OsI3 − 1,Bi,Pr3OsI3,cone1,areal,0.4175915773667611,0.0008934128297914271,True
+4,c4_rqr8,advantage Bi/Pr3OsI3 − 1,Bi,Pr3OsI3,cone3,areal,0.41873013709637275,0.0008848002602550745,True
+4,c4_rqr8,advantage Bi/Pr3OsI3 − 1,Bi,Pr3OsI3,fl,areal,0.20470191145100936,0.003461502166618211,True
+4,c4_rqr8,advantage Bi/Pr3OsI3 − 1,Bi,Pr3OsI3,fl_all,areal,0.23044630106921749,0.005627517590372717,True
+4,c4_rqr8,advantage Bi/Pr3OsI3 − 1,Bi,Pr3OsI3,broad,areal,0.2996554825973696,0.0037902087048292126,True
+4,c4_rqr8,advantage Bi/Pr3OsI3 − 1,Bi,Pr3OsI3,broad_hi,areal,0.27793103721391743,0.0027630722679656892,True
+4,c4_rqr8,advantage Bi/Pr3OsI3 − 1,Bi,Pr3OsI3,broad_grazing_cut,areal,0.300185829574227,0.003947247691307907,True
+4,c4_rqr8,Pb/Pr3OsI3 − 1,Pb,Pr3OsI3,T_tablec,areal,0.42571356746120936,,True
+4,c4_rqr8,Pb/Pr3OsI3 − 1,Pb,Pr3OsI3,T_endf_narrow,areal,0.44079728231179627,,True
+4,c4_rqr8,Pb/Pr3OsI3 − 1,Pb,Pr3OsI3,T_firstorder,areal,0.29791660224948924,,True
+4,c4_rqr8,Pb/Pr3OsI3 − 1,Pb,Pr3OsI3,T_firstorder_nocohlines,areal,0.2920020917417794,,True
+4,c4_rqr8,Pb/Pr3OsI3 − 1,Pb,Pr3OsI3,narrow,areal,0.44011276265258337,0.0009405561671055214,True
+4,c4_rqr8,Pb/Pr3OsI3 − 1,Pb,Pr3OsI3,cone1,areal,0.4402762788306962,0.0009443125125592461,True
+4,c4_rqr8,Pb/Pr3OsI3 − 1,Pb,Pr3OsI3,cone3,areal,0.4413667363173688,0.0009600807534342575,True
+4,c4_rqr8,Pb/Pr3OsI3 − 1,Pb,Pr3OsI3,fl,areal,0.22628494692611767,0.002857443941585335,True
+4,c4_rqr8,Pb/Pr3OsI3 − 1,Pb,Pr3OsI3,fl_all,areal,0.258243172925662,0.005270564221295697,True
+4,c4_rqr8,Pb/Pr3OsI3 − 1,Pb,Pr3OsI3,broad,areal,0.33301003645652383,0.005040567531688057,True
+4,c4_rqr8,Pb/Pr3OsI3 − 1,Pb,Pr3OsI3,broad_hi,areal,0.30153579113155726,0.0027602113855384625,True
+4,c4_rqr8,Pb/Pr3OsI3 − 1,Pb,Pr3OsI3,broad_grazing_cut,areal,0.33316683323257834,0.005199543043172754,True
+4,c4_rqr8,Pb/Bi − 1,Pb,Bi,T_tablec,areal,0.01536123760699204,,True
+4,c4_rqr8,Pb/Bi − 1,Pb,Bi,T_endf_narrow,areal,0.015807905292394064,,True
+4,c4_rqr8,Pb/Bi − 1,Pb,Bi,T_firstorder,areal,0.020336241650361853,,True
+4,c4_rqr8,Pb/Bi − 1,Pb,Bi,T_firstorder_nocohlines,areal,0.021156508945196606,,True
+4,c4_rqr8,Pb/Bi − 1,Pb,Bi,narrow,areal,0.016217785107289995,0.0007861892077082512,True
+4,c4_rqr8,Pb/Bi − 1,Pb,Bi,cone1,areal,0.016002282904412413,0.0007667871908443738,True
+4,c4_rqr8,Pb/Bi − 1,Pb,Bi,cone3,areal,0.01595553560829055,0.0007673728977858426,True
+4,c4_rqr8,Pb/Bi − 1,Pb,Bi,fl,areal,0.017915664671862785,0.002527129295398945,True
+4,c4_rqr8,Pb/Bi − 1,Pb,Bi,fl_all,areal,0.022590885788587478,0.00575189957059206,True
+4,c4_rqr8,Pb/Bi − 1,Pb,Bi,broad,areal,0.02566415046585635,0.004255752004149822,True
+4,c4_rqr8,Pb/Bi − 1,Pb,Bi,broad_hi,areal,0.01847107021447858,0.001996547625161369,True
+4,c4_rqr8,Pb/Bi − 1,Pb,Bi,broad_grazing_cut,areal,0.025366376796424284,0.004356541609926,True
+5,c5_89keV,Tl/Pb − 1 (narrow-beam PB mass price),Tl,Pb,T_tablec,areal,0.027622395444789838,,True
+5,c5_89keV,Tl/Pb − 1 (narrow-beam PB mass price),Tl,Pb,T_endf_narrow,areal,0.021861871971629476,,True
+5,c5_89keV,Tl/Pb − 1 (narrow-beam PB mass price),Tl,Pb,T_firstorder,areal,-0.017247268800339888,,True
+5,c5_89keV,Tl/Pb − 1 (narrow-beam PB mass price),Tl,Pb,T_firstorder_nocohlines,areal,-0.02220153135671943,,True
+5,c5_89keV,Tl/Pb − 1 (narrow-beam PB mass price),Tl,Pb,narrow,areal,0.02190681233220837,0.00030906745303696976,True
+5,c5_89keV,Tl/Pb − 1 (narrow-beam PB mass price),Tl,Pb,cone1,areal,0.02188435521782206,0.0003015541597683715,True
+5,c5_89keV,Tl/Pb − 1 (narrow-beam PB mass price),Tl,Pb,cone3,areal,0.021841653442028486,0.00031205375680847116,True
+5,c5_89keV,Tl/Pb − 1 (narrow-beam PB mass price),Tl,Pb,fl,areal,-0.021644536468792053,0.0005658856711653707,True
+5,c5_89keV,Tl/Pb − 1 (narrow-beam PB mass price),Tl,Pb,fl_all,areal,-0.022968127058285437,0.0011930624395155621,True
+5,c5_89keV,Tl/Pb − 1 (narrow-beam PB mass price),Tl,Pb,broad,areal,-0.02620912174092771,0.001671114635376682,True
+5,c5_89keV,Tl/Pb − 1 (narrow-beam PB mass price),Tl,Pb,broad_hi,areal,-0.024524524205170928,0.001042509490727077,True
+5,c5_89keV,Tl/Pb − 1 (narrow-beam PB mass price),Tl,Pb,broad_grazing_cut,areal,-0.026359107899488587,0.0016704825325010624,True
+5,c5_89keV,HfAu2/Pb − 1,HfAu2,Pb,T_tablec,areal,0.14511243007362173,,True
+5,c5_89keV,HfAu2/Pb − 1,HfAu2,Pb,T_endf_narrow,areal,0.13216457440632756,,True
+5,c5_89keV,HfAu2/Pb − 1,HfAu2,Pb,T_firstorder,areal,-0.21195493800209797,,True
+5,c5_89keV,HfAu2/Pb − 1,HfAu2,Pb,T_firstorder_nocohlines,areal,-0.26719304500516305,,True
+5,c5_89keV,HfAu2/Pb − 1,HfAu2,Pb,narrow,areal,0.1325519367802237,0.00033906503979276174,True
+5,c5_89keV,HfAu2/Pb − 1,HfAu2,Pb,cone1,areal,0.1323725698127114,0.00033744501385232713,True
+5,c5_89keV,HfAu2/Pb − 1,HfAu2,Pb,cone3,areal,0.13075238010088053,0.00036182802337193066,True
+5,c5_89keV,HfAu2/Pb − 1,HfAu2,Pb,fl,areal,-0.2165372366570245,0.00046434294595640795,True
+5,c5_89keV,HfAu2/Pb − 1,HfAu2,Pb,fl_all,areal,-0.2186354196193916,0.0009997913203076,True
+5,c5_89keV,HfAu2/Pb − 1,HfAu2,Pb,broad,areal,-0.22526314744023657,0.0011776577101886576,True
+5,c5_89keV,HfAu2/Pb − 1,HfAu2,Pb,broad_hi,areal,-0.22278894158531126,0.0004950081145994623,True
+5,c5_89keV,HfAu2/Pb − 1,HfAu2,Pb,broad_grazing_cut,areal,-0.2255134714573297,0.001198236003548723,True
+5,c5_89keV,HfAu2/Tl − 1,HfAu2,Tl,T_tablec,areal,0.11433191330749293,,True
+5,c5_89keV,HfAu2/Tl − 1,HfAu2,Tl,T_endf_narrow,areal,0.10794286924697039,,True
+5,c5_89keV,HfAu2/Tl − 1,HfAu2,Tl,T_firstorder,areal,-0.19812478054787563,,True
+5,c5_89keV,HfAu2/Tl − 1,HfAu2,Tl,T_firstorder_nocohlines,areal,-0.2505542005893867,,True
+5,c5_89keV,HfAu2/Tl − 1,HfAu2,Tl,narrow,areal,0.10827320369408211,0.00030748723621361795,True
+5,c5_89keV,HfAu2/Tl − 1,HfAu2,Tl,cone1,areal,0.1081220336046127,0.00030375511026037506,True
+5,c5_89keV,HfAu2/Tl − 1,HfAu2,Tl,cone3,areal,0.10658278246144226,0.00034147107280366526,True
+5,c5_89keV,HfAu2/Tl − 1,HfAu2,Tl,fl,areal,-0.19920438680313624,0.0004409272365922289,True
+5,c5_89keV,HfAu2/Tl − 1,HfAu2,Tl,fl_all,areal,-0.20026705164896785,0.0008667259686026027,True
+5,c5_89keV,HfAu2/Tl − 1,HfAu2,Tl,broad,areal,-0.20441147082336053,0.001316135485998701,True
+5,c5_89keV,HfAu2/Tl − 1,HfAu2,Tl,broad_hi,areal,-0.20324900246066369,0.0008240872104428136,True
+5,c5_89keV,HfAu2/Tl − 1,HfAu2,Tl,broad_grazing_cut,areal,-0.20454601401158268,0.001316081055331588,True

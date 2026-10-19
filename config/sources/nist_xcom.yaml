@@ -1,0 +1,104 @@
+id: nist_xcom
+title: 'XCOM: Photon Cross Sections Database — standalone program and data, version 3.1'
+citation: 'M. J. Berger, J. H. Hubbell, S. M. Seltzer, J. Chang, J. S. Coursey, R. Sukumar, D. S. Zucker,
+  and K. Olsen, XCOM: Photon Cross Section Database (version 1.5), NIST Standard Reference Database 8
+  (XGAM), doi:10.18434/T48G6X, National Institute of Standards and Technology, Gaithersburg, MD (2010);
+  downloadable version 3.1 (M. J. Berger and J. H. Hubbell, 23 June 1999). Originally published as M.
+  J. Berger and J. H. Hubbell, XCOM: Photon Cross Sections on a Personal Computer, NBSIR 87-3597 (1987).'
+data_class: P1
+retrieval_method: bulk download of the standalone distribution (not the web form)
+url: https://physics.nist.gov/PhysRefData/Xcom/XCOM.tar.gz
+landing_page: https://physics.nist.gov/PhysRefData/Xcom/Text/download.html
+files:
+- path: data/raw/xcom/XCOM.tar.gz
+  url: https://physics.nist.gov/PhysRefData/Xcom/XCOM.tar.gz
+  sha256: b2bdd0608bbece4809a337b7264c85b7997f608a1f8e2181ce5201421efcc0de
+  bytes: 172805
+  retrieved_utc: '2026-10-11T15:03:42+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+licence: '(c) 1990, 1998 U.S. Secretary of Commerce; XCOM.f grants use for non-commercial purposes; NIST
+  SRD records: https://www.nist.gov/open/license'
+notes: Mac resource-fork entries (.rsrc/) in the tarball are ignored. Interpolation is a port of XCOM.f
+  (see src/shieldmap/ingest/xsec.py).
+data:
+  standard_grid_keV:
+  - 1.0
+  - 1.5
+  - 2.0
+  - 3.0
+  - 4.0
+  - 5.0
+  - 6.0
+  - 8.0
+  - 10.0
+  - 15.0
+  - 20.0
+  - 30.0
+  - 40.0
+  - 50.0
+  - 60.0
+  - 80.0
+  - 100.0
+  - 150.0
+  - 200.0
+  - 300.0
+  - 400.0
+  - 500.0
+  - 600.0
+  - 800.0
+  - 1000.0
+  - 1022.0
+  - 1250.0
+  - 1500.0
+  - 2000.0
+  - 2044.0
+  - 3000.0
+  - 4000.0
+  - 5000.0
+  - 6000.0
+  - 7000.0
+  - 8000.0
+  - 9000.0
+  - 10000.0
+  - 11000.0
+  - 12000.0
+  - 13000.0
+  - 14000.0
+  - 15000.0
+  - 16000.0
+  - 18000.0
+  - 20000.0
+  - 22000.0
+  - 24000.0
+  - 26000.0
+  - 28000.0
+  - 30000.0
+  - 40000.0
+  - 50000.0
+  - 60000.0
+  - 80000.0
+  - 100000.0
+  - 150000.0
+  - 200000.0
+  - 300000.0
+  - 400000.0
+  - 500000.0
+  - 600000.0
+  - 800000.0
+  - 1000000.0
+  - 1500000.0
+  - 2000000.0
+  - 3000000.0
+  - 4000000.0
+  - 5000000.0
+  - 6000000.0
+  - 8000000.0
+  - 10000000.0
+  - 15000000.0
+  - 20000000.0
+  - 30000000.0
+  - 40000000.0
+  - 50000000.0
+  - 60000000.0
+  - 80000000.0
+  - 100000000.0

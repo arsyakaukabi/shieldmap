@@ -1,0 +1,21 @@
+id: xraylib
+title: 'xraylib: X-ray fluorescence and atomic-shell data library (K/L-shell fluorescence yields, line energies,
+  radiative rates, edge energies, jump factors, Kissel line-production cross sections)'
+citation: 'T. Schoonjans, A. Brunetti, B. Golosio, M. Sanchez del Rio, V. A. Solé, C. Ferrero, L. Vincze,
+  "The xraylib library for X-ray–matter interactions. Recent developments", Spectrochim. Acta B 66, 776–784
+  (2011). Package version 4.3.0.'
+data_class: P3
+retrieval_method: official package (PyPI xraylib), pinned in requirements.lock; no network access at run time
+package:
+  name: xraylib
+  version: 4.3.0
+  files:
+    _xraylib.cp312-win_amd64.pyd: f2403775b73d1eda622f6507a39a2426650735dbca38604f9971695ac102420e
+    xraylib_np.cp312-win_amd64.pyd: fb906c1ba7127f8ab627d151f9e2572ee04e2a3d3114682ff255bce60d9bdd3c
+    xraylib.py: ed956131370e1dd9608999e24c5203312b94ba3c94fd5a6be0be3239efa31a89
+licence: BSD-3-Clause
+lineage: Not asserted. The xraylib 4.3.0 documentation does not name a source per quantity; the handover's
+  "EADL/EPDL97-type" lineage is therefore not claimed (BLOCKERS N-4, F-D-3).
+use: Phase 3 Step 2 (fluorescence escape correction and its sensitivities) and the Step 10 L-shell extension
+  and edge-window checks only. No xraylib value enters μ/ρ, ρ or the Table C profiles; the narrow-beam
+  baseline is Table C (checked to 5.9e-8 relative in Step 2).

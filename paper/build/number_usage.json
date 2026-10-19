@@ -1,0 +1,885 @@
+{
+ "H03": {
+  "main": [
+   "abstract in None",
+   "front matter",
+   "Price of a requirement",
+   "tab:t1",
+   "Most requirements are nearly free",
+   "Conclusions"
+  ]
+ },
+ "H04": {
+  "main": [
+   "abstract in None",
+   "front matter",
+   "tab:t1",
+   "Most requirements are nearly free",
+   "Conclusions"
+  ]
+ },
+ "H15": {
+  "main": [
+   "abstract in None",
+   "front matter",
+   "tab:t1",
+   "Conclusions"
+  ]
+ },
+ "H133": {
+  "main": [
+   "abstract in None",
+   "front matter",
+   "tab:t1",
+   "Conclusions"
+  ]
+ },
+ "H07": {
+  "main": [
+   "abstract in None",
+   "front matter",
+   "tab:t1",
+   "Most requirements are nearly free",
+   "Conclusions"
+  ]
+ },
+ "H09": {
+  "main": [
+   "abstract in None",
+   "front matter",
+   "Price of a requirement",
+   "tab:t1",
+   "Transparency is a price in space",
+   "figure in Transparency is a price in space",
+   "Conclusions"
+  ]
+ },
+ "H10": {
+  "main": [
+   "abstract in None",
+   "front matter",
+   "Price of a requirement",
+   "tab:t1",
+   "Transparency is a price in space",
+   "Conclusions"
+  ]
+ },
+ "H318": {
+  "main": [
+   "abstract in None",
+   "front matter",
+   "In X-ray beams the frontier is a lanthanide family",
+   "Conclusions"
+  ]
+ },
+ "H05": {
+  "main": [
+   "front matter",
+   "tab:t1",
+   "Most requirements are nearly free"
+  ]
+ },
+ "H06": {
+  "main": [
+   "front matter",
+   "tab:t1",
+   "Most requirements are nearly free"
+  ]
+ },
+ "H08": {
+  "main": [
+   "front matter",
+   "tab:t1",
+   "Most requirements are nearly free"
+  ]
+ },
+ "H201": {
+  "main": [
+   "front matter",
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H202": {
+  "main": [
+   "front matter",
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H200": {
+  "main": [
+   "front matter",
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H319": {
+  "main": [
+   "front matter",
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H79": {
+  "main": [
+   "figure in Attenuation and transmission",
+   "The map"
+  ]
+ },
+ "H70": {
+  "main": [
+   "Price of a requirement",
+   "tab:t2",
+   "Frontier crystals under density uncertainty"
+  ]
+ },
+ "H66": {
+  "main": [
+   "Price of a requirement",
+   "tab:t2",
+   "Frontier crystals under density uncertainty"
+  ]
+ },
+ "H87": {
+  "main": [
+   "Density-error model"
+  ],
+  "supplementary": [
+   "Density bias",
+   "figure in Density bias"
+  ]
+ },
+ "H242": {
+  "main": [
+   "Fluorescence correction"
+  ],
+  "supplementary": [
+   "Monte Carlo spot check"
+  ]
+ },
+ "H244": {
+  "main": [
+   "Fluorescence correction"
+  ],
+  "supplementary": [
+   "Monte Carlo spot check"
+  ]
+ },
+ "H316": {
+  "main": [
+   "Monte Carlo spot check"
+  ],
+  "supplementary": [
+   "Monte Carlo spot check",
+   "tab:s-mcclaims"
+  ]
+ },
+ "H11": {
+  "main": [
+   "tab:t1",
+   "Most requirements are nearly free"
+  ],
+  "supplementary": [
+   "Monte Carlo spot check"
+  ]
+ },
+ "H12": {
+  "main": [
+   "tab:t1",
+   "Most requirements are nearly free"
+  ]
+ },
+ "H17": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H134": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H19": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H135": {
+  "main": [
+   "tab:t1",
+   "Most requirements are nearly free"
+  ]
+ },
+ "H21": {
+  "main": [
+   "tab:t1",
+   "Transparency is a price in space",
+   "figure in Transparency is a price in space"
+  ]
+ },
+ "H136": {
+  "main": [
+   "tab:t1",
+   "Transparency is a price in space"
+  ]
+ },
+ "H23": {
+  "main": [
+   "tab:t1",
+   "Most requirements are nearly free"
+  ]
+ },
+ "H137": {
+  "main": [
+   "tab:t1",
+   "Most requirements are nearly free"
+  ]
+ },
+ "H27": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H28": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H29": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H30": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H31": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H32": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H33": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H34": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H35": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H36": {
+  "main": [
+   "tab:t1"
+  ]
+ },
+ "H80": {
+  "main": [
+   "The map"
+  ]
+ },
+ "H56": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H63": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H121": {
+  "main": [
+   "Most requirements are nearly free"
+  ],
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H139": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H42": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H43": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H44": {
+  "main": [
+   "Most requirements are nearly free",
+   "Discussion"
+  ]
+ },
+ "H67": {
+  "main": [
+   "Most requirements are nearly free",
+   "tab:t2",
+   "Frontier crystals under density uncertainty"
+  ]
+ },
+ "H431": {
+  "main": [
+   "Most requirements are nearly free"
+  ],
+  "supplementary": [
+   "Monte Carlo spot check",
+   "tab:s-mcclaims"
+  ]
+ },
+ "H312": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H166": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H46": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H176": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H203": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H205": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H204": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H206": {
+  "main": [
+   "Most requirements are nearly free"
+  ]
+ },
+ "H51": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H177": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H241": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H146": {
+  "main": [
+   "figure in Transparency is a price in space",
+   "Transparency is a price in space",
+   "Conclusions"
+  ],
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H147": {
+  "main": [
+   "figure in Transparency is a price in space",
+   "Transparency is a price in space"
+  ],
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H89": {
+  "main": [
+   "tab:t2",
+   "Frontier crystals under density uncertainty"
+  ]
+ },
+ "H90": {
+  "main": [
+   "tab:t2",
+   "Frontier crystals under density uncertainty"
+  ]
+ },
+ "H91": {
+  "main": [
+   "tab:t2",
+   "Frontier crystals under density uncertainty"
+  ]
+ },
+ "H92": {
+  "main": [
+   "tab:t2",
+   "Frontier crystals under density uncertainty"
+  ]
+ },
+ "H154": {
+  "main": [
+   "tab:t2",
+   "Frontier crystals under density uncertainty"
+  ]
+ },
+ "H93": {
+  "main": [
+   "tab:t2",
+   "Frontier crystals under density uncertainty"
+  ]
+ },
+ "H157": {
+  "main": [
+   "tab:t2",
+   "Frontier crystals under density uncertainty"
+  ]
+ },
+ "H94": {
+  "main": [
+   "tab:t2",
+   "Frontier crystals under density uncertainty"
+  ]
+ },
+ "H155": {
+  "main": [
+   "tab:t2",
+   "Frontier crystals under density uncertainty"
+  ]
+ },
+ "H235": {
+  "main": [
+   "Transparency is a price in space"
+  ],
+  "supplementary": []
+ },
+ "H231": {
+  "main": []
+ },
+ "H223": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H233": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H401": {
+  "main": [
+   "Transparency is a price in space"
+  ],
+  "supplementary": [
+   "Transparency filter: anchor crystals"
+  ]
+ },
+ "H403": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H405": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H404": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H406": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H237": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H239": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H158": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H150": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H160": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H151": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H152": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H153": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H148": {
+  "main": [
+   "Transparency is a price in space"
+  ],
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H149": {
+  "main": [
+   "Transparency is a price in space"
+  ],
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H127": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H129": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H124": {
+  "main": [
+   "Transparency is a price in space"
+  ],
+  "supplementary": [
+   "figure in Monte Carlo spot check",
+   "Monte Carlo spot check",
+   "tab:s-mcclaims"
+  ]
+ },
+ "H303": {
+  "main": [
+   "Transparency is a price in space"
+  ],
+  "supplementary": [
+   "Monte Carlo spot check"
+  ]
+ },
+ "H125": {
+  "main": [
+   "Transparency is a price in space"
+  ]
+ },
+ "H172": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H168": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H180": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H186": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H169": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H173": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H310": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H311": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H84": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H214": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H215": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H219": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H217": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H323": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H189": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ],
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H190": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family",
+   "Discussion"
+  ],
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H278": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ],
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H191": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ],
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H192": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family",
+   "Discussion"
+  ],
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H145": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H305": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H114": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ],
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H268": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ],
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H269": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H276": {
+  "main": [
+   "In X-ray beams the frontier is a lanthanide family"
+  ]
+ },
+ "H108": {
+  "main": [
+   "Discussion"
+  ]
+ },
+ "H301": {
+  "main": [
+   "Discussion"
+  ]
+ },
+ "H207": {
+  "supplementary": [
+   "Data sources and definitions"
+  ]
+ },
+ "H210": {
+  "supplementary": [
+   "Data sources and definitions"
+  ]
+ },
+ "H211": {
+  "supplementary": [
+   "Data sources and definitions"
+  ]
+ },
+ "H212": {
+  "supplementary": [
+   "Data sources and definitions"
+  ]
+ },
+ "H213": {
+  "supplementary": [
+   "Data sources and definitions"
+  ]
+ },
+ "H302": {
+  "supplementary": [
+   "Density bias"
+  ]
+ },
+ "H37": {
+  "supplementary": [
+   "Element-exclusion filters"
+  ]
+ },
+ "H39": {
+  "supplementary": [
+   "Element-exclusion filters"
+  ]
+ },
+ "H38": {
+  "supplementary": [
+   "Element-exclusion filters"
+  ]
+ },
+ "H60": {
+  "supplementary": [
+   "Element-exclusion filters"
+  ]
+ },
+ "H62": {
+  "supplementary": [
+   "Element-exclusion filters"
+  ]
+ },
+ "H58": {
+  "supplementary": [
+   "Element-exclusion filters"
+  ]
+ },
+ "H315": {
+  "supplementary": [
+   "Monte Carlo spot check"
+  ]
+ },
+ "H174": {
+  "supplementary": [
+   "Monte Carlo spot check"
+  ]
+ },
+ "H279": {
+  "supplementary": [
+   "Monte Carlo spot check"
+  ]
+ },
+ "H246": {
+  "supplementary": [
+   "figure in Monte Carlo spot check"
+  ]
+ },
+ "H304": {
+  "supplementary": [
+   "Monte Carlo spot check"
+  ]
+ },
+ "H243": {
+  "supplementary": [
+   "Monte Carlo spot check"
+  ]
+ },
+ "H430": {
+  "supplementary": [
+   "Monte Carlo spot check",
+   "tab:s-mcclaims"
+  ]
+ },
+ "H433": {
+  "supplementary": [
+   "Monte Carlo spot check",
+   "tab:s-mcclaims"
+  ]
+ },
+ "H434": {
+  "supplementary": [
+   "Monte Carlo spot check",
+   "tab:s-mcclaims"
+  ]
+ },
+ "H193": {
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ },
+ "H194": {
+  "supplementary": [
+   "tab:s-mcclaims"
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+{
+  "upload_type": "software",
+  "title": "shieldmap (v1.0)",
+  "creators": [
+    {
+      "name": "Kaukabi, Mohamad Arsya",
+      "affiliation": "Department of Physics, Faculty of Science and Mathematics, Diponegoro University, Semarang 50275, Indonesia",
+      "orcid": "0000-0003-1307-0430"
+    },
+    {
+      "name": "Putra, Oki Ade",
+      "affiliation": "Department of Physics, Faculty of Science and Mathematics, Diponegoro University, Semarang 50275, Indonesia",
+      "orcid": "0009-0005-8170-1806"
+    }
+  ],
+  "description": "<p>Source code, tests, configuration and documentation of shieldmap v1.0. Data files: doi:10.5281/zenodo.23457298.</p><p>Licence: MIT, except src/shieldmap/ingest/xsec.py (NIST XCOM terms; see NOTICE); data, documentation and figures CC BY 4.0 (LICENSE-data).</p>",
+  "license": "mit",
+  "version": "1.0",
+  "access_right": "open",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23457298",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset"
+    }
+  ]
+}

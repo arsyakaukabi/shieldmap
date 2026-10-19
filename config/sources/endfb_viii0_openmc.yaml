@@ -1,0 +1,57 @@
+id: endfb_viii0_openmc
+title: ENDF/B-VIII.0 nuclear and atomic data library in OpenMC HDF5 format (official OpenMC data library,
+  NJOY-processed), photoatomic and atomic-relaxation sublibraries used
+citation: 'D. A. Brown et al., "ENDF/B-VIII.0: The 8th Major Release of the Nuclear Reaction Data Library with
+  CIELO-project Cross Sections, New Standards and Thermal Scattering Data", Nucl. Data Sheets 148, 1-142 (2018).
+  Library processed and distributed by the OpenMC project (https://openmc.org/data/, "Official Data
+  Libraries", ENDF/B-VIII.0). Transport code: P. K. Romano et al., "OpenMC: A state-of-the-art Monte Carlo code
+  for research and development", Ann. Nucl. Energy 82, 90-97 (2015); version 0.16.0 (conda-forge).'
+data_class: P1
+retrieval_method: one bulk download of the official archive linked from https://openmc.org/data/ (ENDF/B-VIII.0,
+  "Official Data Libraries", .tar.xz link), resumable HTTP (curl -C -), inside WSL Ubuntu-24.04. SHA-256 and
+  MD5 computed over the complete archive; only the photon/ directory and cross_sections.xml were extracted for
+  the photon physics. OpenMC 0.16.0 also reads incident-neutron files for every nuclide of a material even in a
+  photon-only fixed-source run, so the neutron files of the nuclides of the MC materials (68 files, elements Pb
+  Ir Hf O Bi F La Pr Sb Pd Os I Tl Au) were extracted from the same archive; they are loaded but never sampled
+  (the source emits photons only). Script - src/shieldmap/analysis4/mc/wsl_get_endf.sh and
+  wsl_get_neutron_stubs.sh.
+url: https://anl.box.com/shared/static/uhbxlrx7hvxqw27psymfbhi7bx7s6u6a.xz
+landing_page: https://openmc.org/data/
+served_filename: endfb80.tar.xz
+files:
+- path: WSL ~/endf/endfb80.tar.xz (not in the repository)
+  url: https://anl.box.com/shared/static/uhbxlrx7hvxqw27psymfbhi7bx7s6u6a.xz
+  bytes: 3383607420
+  sha256: 200cc6b97aa8cacc3f70ebc169bb91cf39381875fc80fb91ec5d84292da9b970
+  md5: f2a3f7d5558435084aca4b586582f0fb
+  published_checksum: none (the OpenMC data page lists no checksum for this archive; checked 2026-10-12)
+  retrieval_started_utc: '2026-10-12T14:01:20+00:00'
+  retrieval_finished_utc: '2026-10-12T14:05:17+00:00'
+  archive_entries: 695
+extracted:
+  root: WSL ~/endf/endfb-viii.0-hdf5/
+  cross_sections.xml:
+    sha256: ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489
+  photon_files: 100 (186,002,504 bytes; HDF5 filetype data_photon, version 3.0)
+  photon_sha256_used_elements:
+    Pb: cf43198611a48c1d8896367d0814137dc9db91cc185294d93387f20d421c1b09
+    Ir: 4b18cab574177ec7f4c54177916e05179e6af051d8a0bb6ef37359d9a813050b
+    Hf: 56f1993861d6f67a6b88738cb2878520592fd2eefa4c160af9d69093dcd3d225
+    O: ca6d0db0f9a094c637ff0f9d2b7e89655df987f2785704744f6be92efd3d34db
+    Bi: d9b26db27c8d725e2fdd7c540bc73fdc7ea1504f536956b3f43b406b9c47ba32
+    F: 24fe2964dc9c3144dbae058ddd552cf95415b0fc35f1510f22f075a2f3e82f68
+    La: 6af122eb0962d02d1aa4d8130bd4824ccf036e887289de3612f728e316ffd9e5
+    Pr: 9596388da5744c13e40d7c32cad8dc39a1f9bd90e4488418b73da4e1798b21bc
+    Sb: 44a16c602cc5dd0e266eead5655bfe7b359e9de94bf5e7e3286f43b05330519d
+    Pd: 144bc4850834f57e9b19e8fe123ac798ec16edd6e5dcddab729f6764469dc2af
+    Os: 4b549fc8476d9180440e151d538b74d5b68daa18a297db191582f487c6e90665
+    I: e429992c84ecee5b6306e5444d1a17311f6616408171eec102040aca7ac985cf
+    Tl: fb2bcac739f13c6310c50004cf0ef29dd27467c8f7d3b376c9a6828e3d36ce94
+    Au: 77439240f7831a42bed5ce31d1f28f722f59701613b58144c91d1c8a587bb29c
+  neutron_files: 68 (737,605,040 bytes; loaded by OpenMC only, never sampled)
+kept: photon/ and the 68 neutron files and cross_sections.xml (about 0.9 GB, in WSL ~/endf). The archive was
+  deleted after the MC runs finished and the hashes above were recorded (see reports/phase4a/step5_mc.md for
+  the date); a re-download is verified against the SHA-256 above.
+licence: ENDF/B data are public (US DOE / NNDC); OpenMC library distributed by the OpenMC project.
+use: Phase 4a Step 5 Monte Carlo spot check ONLY (shieldmap.analysis4.mc). ENDF/B-VIII.0 cross sections never
+  enter the map, Table A/B/C or any headline number; the map stays on XCOM (nist_xcom.yaml).

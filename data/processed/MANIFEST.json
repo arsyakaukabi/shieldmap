@@ -1,0 +1,436 @@
+{
+ "project": "shieldmap",
+ "phase": 1,
+ "build_started_utc": "2026-10-11T16:41:03+00:00",
+ "build_finished_utc": "2026-10-11T17:44:46+00:00",
+ "python": "3.12.15",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "packages": {
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "pandas": "3.0.6",
+  "pyarrow": "26.0.0",
+  "pymatgen": "2026.9.24",
+  "mp-api": "0.46.5",
+  "emmet-core": "0.87.3",
+  "spekpy": "2.5.4",
+  "pyyaml": "6.0.3",
+  "pypdf": "6.20.0"
+ },
+ "config": {
+  "path": "config/default.yaml",
+  "sha256_at_start": "25ecd9ef338bc2d2f606d20e2b547e5b5a050d14177c3ee967e6868e030f0af6",
+  "sha256_at_end": "25ecd9ef338bc2d2f606d20e2b547e5b5a050d14177c3ee967e6868e030f0af6"
+ },
+ "sources": {
+  "crustal_abundance": {
+   "title": "Abundance of elements in the Earth's crust (mg/kg = ppm by mass)",
+   "data_class": "P3",
+   "retrieved_utc": "2026-10-11T14:58:40+00:00",
+   "package": {
+    "name": "mendeleev",
+    "version": "1.3.0",
+    "elements_db_sha256": "8a6312b57603e22c58ab28005bb8cacfbff721bc859eea8ddc2b784c17ffd717"
+   },
+   "record_sha256": "c82c8cf44743b88ab3d9d8dc35f66befefeddf1ba8d3cb14a1028f8f5e6a7a7f"
+  },
+  "ensdf_co60": {
+   "title": "ENSDF 60CO B- DECAY (1925.28 D) (daughter 60NI), gamma lines and absolute intensities",
+   "data_class": "P1",
+   "files": [
+    {
+     "path": "data/raw/ensdf/ensdf_261001.zip",
+     "url": "https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist26/ensdf_261001.zip",
+     "sha256": "2546aefea0190587fdf4d7ceba30eea032e44b1a070b1c3b1ff804e57e913799",
+     "bytes": 42479053,
+     "retrieved_utc": "2026-10-11T15:01:58+00:00"
+    }
+   ],
+   "record_sha256": "8f12cd91e54a524d913730deb464b36af7c37c26bd7ba50024431dbb795b0d90"
+  },
+  "ensdf_cs137": {
+   "title": "ENSDF 137CS B- DECAY (daughter 137BA), gamma lines and absolute intensities",
+   "data_class": "P1",
+   "files": [
+    {
+     "path": "data/raw/ensdf/ensdf_261001.zip",
+     "url": "https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist26/ensdf_261001.zip",
+     "sha256": "2546aefea0190587fdf4d7ceba30eea032e44b1a070b1c3b1ff804e57e913799",
+     "bytes": 42479053,
+     "retrieved_utc": "2026-10-11T15:01:58+00:00"
+    }
+   ],
+   "record_sha256": "1346d66052c5acf7d35cc7f638108608f4066c1916d6f0199ddb51df6ab36138"
+  },
+  "materials_project": {
+   "title": "Materials Project summary collection, database version 2026.04.13",
+   "data_class": "P2",
+   "retrieved_utc": "2026-10-11T15:05:30+00:00",
+   "database_version": "2026.04.13",
+   "url": "https://api.materialsproject.org",
+   "files": [
+    {
+     "path": "data/raw/mp/summary_2026.04.13.jsonl.gz",
+     "sha256": "5952010143439e159a37154b4a7421a1ca4dca2b9be53a1fe00fafeb0db39397",
+     "bytes": 14462011
+    },
+    {
+     "path": "data/raw/mp/summary_2026.04.13.meta.json",
+     "sha256": "691406677c62f0aa14e703fad5312d2f2c33c007a85eaa2defb139270ea08d83",
+     "bytes": 1177
+    },
+    {
+     "path": "data/raw/mp/thermo_check_2026.04.13.json",
+     "sha256": "d54ea80da6172ebacdf0f4598283f01c7d91b93951b408e655694c64f6194f16",
+     "bytes": 20559
+    }
+   ],
+   "record_sha256": "f0ef54324146426adbb4d69ed4b8502bae9b6406859254656b5f68ad15c089fa"
+  },
+  "nist_srd126": {
+   "title": "NIST SRD 126: X-ray mass attenuation and mass energy-absorption coefficients (air; validation elements and compounds; material constants)",
+   "data_class": "P1",
+   "files": [
+    {
+     "path": "data/raw/srd126/ComTab_air.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/air.html",
+     "sha256": "21dd954092db203ca531a356320ce19fc5d3f6f63db80d2b50095971b32e7776",
+     "bytes": 9693,
+     "retrieved_utc": "2026-10-11T15:02:08+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "9bcaf4cf0ff4c9de9272d8b36238db85e0715ed25312589210ab927b4f910bc0"
+    },
+    {
+     "path": "data/raw/srd126/ElemTab_z13.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z13.html",
+     "sha256": "768734691ed8bfa5d81b356a6f8508ee5d3f2c0627ec37a32ef6dc7f34815614",
+     "bytes": 9329,
+     "retrieved_utc": "2026-10-11T15:02:10+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "d851d497fe6ef7fede455e3a012d8b23925aba8a4a199b42c1c2231aa02c190f"
+    },
+    {
+     "path": "data/raw/srd126/ElemTab_z26.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z26.html",
+     "sha256": "9d379d355148ef345f4c5f7b925ffde9472e743fa54948cb8d61b21cae139d19",
+     "bytes": 9314,
+     "retrieved_utc": "2026-10-11T15:02:12+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "a53a20269e920ae558a0f84b126e7b45c256715a05048ff0197dd933a77967da"
+    },
+    {
+     "path": "data/raw/srd126/ElemTab_z74.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z74.html",
+     "sha256": "b2c3877a786948ddf69843da88004b5dd70d3354824efeab46a5e47aa5421a73",
+     "bytes": 12507,
+     "retrieved_utc": "2026-10-11T15:02:14+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "55630b7a3cfa38494058ebb6f0451a4cb2f225b0f874496917ee73a906bc0153"
+    },
+    {
+     "path": "data/raw/srd126/ElemTab_z82.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z82.html",
+     "sha256": "e7c061aa650c972d2c56ba9c09b09377425770bd2214ba326a9d3de83134aa2c",
+     "bytes": 12353,
+     "retrieved_utc": "2026-10-11T15:02:15+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "13ff87fc0cff1d914b569a4d269cd5f93fdb9487dfbb50d3841b41ca328de769"
+    },
+    {
+     "path": "data/raw/srd126/ComTab_water.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/water.html",
+     "sha256": "e7ed7aada382031a3430676d6f226ac75a6ff4e4e1083656c2a401311b21b54d",
+     "bytes": 8731,
+     "retrieved_utc": "2026-10-11T15:02:21+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "5d77c7f49aab6c2aea04190e28a54f66e6cb5184a55d6f0487b0f64fca79f737"
+    },
+    {
+     "path": "data/raw/srd126/ComTab_fluoride.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/fluoride.html",
+     "sha256": "42ac4ff6eaa121a03e473b16819952a8db3df197b168b5f630e43df453fb593e",
+     "bytes": 9847,
+     "retrieved_utc": "2026-10-11T15:02:23+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "f84cef29a2b9d2d31df21558002c417dbee8c870c39ce90ef2ab2891b0a86fd0"
+    },
+    {
+     "path": "data/raw/srd126/ComTab_cesium.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/cesium.html",
+     "sha256": "385832ab34259e4526df6da0a5ab60af63f400da5d0e8a3bfca7e5c5322f9b2f",
+     "bytes": 14408,
+     "retrieved_utc": "2026-10-11T15:02:25+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "9d862648f590fe8ca812bc8d6fee07186f90124cea285dafa6c5702e31449ecb"
+    },
+    {
+     "path": "data/raw/srd126/ComTab_lithiumflu.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/lithiumflu.html",
+     "sha256": "9777d61e8e70beb5ee3e3769b428f009a9d7638395c0a3d086ce6ef0b3095401",
+     "bytes": 8849,
+     "retrieved_utc": "2026-10-11T15:02:26+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "7557d985930aaac0187302ee2e4754e679fe3a49ca3e3b47c5bdaba7e544a572"
+    },
+    {
+     "path": "data/raw/srd126/ComTab_gallium.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/gallium.html",
+     "sha256": "4adec687ffcfe342fe5f335d40f8324b10f03f74208a4e488ff2e8fc394e4a9d",
+     "bytes": 13030,
+     "retrieved_utc": "2026-10-11T15:02:28+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "69c9b1e6d6b5adfa0d6585b31f2ea38111dbf05d505b9cf874a3dafa777dc828"
+    },
+    {
+     "path": "data/raw/srd126/ComTab_telluride.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/telluride.html",
+     "sha256": "23131933004b660f38b90ad6c617a5949b4eac1df91422a3be60aea9890b92fe",
+     "bytes": 13624,
+     "retrieved_utc": "2026-10-11T15:02:30+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "71c27379e9cbe8933b051ab633dfecf4dc9785e56af1830da82486dd89394951"
+    },
+    {
+     "path": "data/raw/srd126/ComTab_mercuric.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/mercuric.html",
+     "sha256": "c662b376e96c58ec1ca3f4cac2187a3cdbef40a713f6a1b0de3573f7e91df5ed",
+     "bytes": 15310,
+     "retrieved_utc": "2026-10-11T15:02:32+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "ab0b6c094e14e8abffd40d7ac8ef11f9771fd82b6e0e042d34a5063d2c9c98aa"
+    },
+    {
+     "path": "data/raw/srd126/ComTab_gadolinium.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/gadolinium.html",
+     "sha256": "0e07420073f0957a85ab6b6e2d56dba35d64336d6e6ded07bfd8fa68140919cf",
+     "bytes": 13405,
+     "retrieved_utc": "2026-10-11T15:02:34+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "0b713d7522664bb85186a5a4a52043df80867b17c8c482b725b43923b9e52173"
+    },
+    {
+     "path": "data/raw/srd126/ComTab_calcium.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/calcium.html",
+     "sha256": "b5113825fd771b3653782a76b76003d0af19f92c54fe6e2a68bfc9bafad9d1f0",
+     "bytes": 10060,
+     "retrieved_utc": "2026-10-11T15:02:36+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "f3e69065b4039310a8833ab808e3ea20f5273d8ac5d02705350920f55a749e1f"
+    },
+    {
+     "path": "data/raw/srd126/ComTab_lithium.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/lithium.html",
+     "sha256": "68c11a0dcb86569aeeff1b3cefc33ca3dc8364a388bf039ef912d33c1343b70a",
+     "bytes": 8856,
+     "retrieved_utc": "2026-10-11T15:02:37+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "6c55d049e79e896216dd87dc60c3e9bf4d58c27bc9c56a0299e485dae66f328a"
+    },
+    {
+     "path": "data/raw/srd126/ComTab_magnesium.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/magnesium.html",
+     "sha256": "d137a0f38da969417b0391cfaa91a329f4dc5b07a937f254c066eef8e13ad069",
+     "bytes": 9690,
+     "retrieved_utc": "2026-10-11T15:02:39+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "131487a14650774ff6be4b16dbe2f58c76812d081fcc2a51533e8dafb87a7641"
+    },
+    {
+     "path": "data/raw/srd126/tab1.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/tab1.html",
+     "sha256": "9d6781a9cdb5510520b915e347e6e95647ec7fec729d05418beef4af08ee52ef",
+     "bytes": 13457,
+     "retrieved_utc": "2026-10-11T15:02:17+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "fb3b356dca1980edc47102b9671222975c474b72711835c144c7d4a305923b21"
+    },
+    {
+     "path": "data/raw/srd126/tab2.html",
+     "url": "https://physics.nist.gov/PhysRefData/XrayMassCoef/tab2.html",
+     "sha256": "a85c1518c9d7641a6d7811597e82e63b3246124de834824beaaa3c87e2dfd015",
+     "bytes": 16417,
+     "retrieved_utc": "2026-10-11T15:02:19+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)",
+     "content_sha256": "667eb71c31c263a25c7361d87a9c0dd301108014f7c4cd1d76631f89dcfb57df"
+    }
+   ],
+   "record_sha256": "e52783bcce26c7b5d66e54890b924b7d6380226d4aff36825773b3425ce16577"
+  },
+  "nist_xcom": {
+   "title": "XCOM: Photon Cross Sections Database \u2014 standalone program and data, version 3.1",
+   "data_class": "P1",
+   "url": "https://physics.nist.gov/PhysRefData/Xcom/XCOM.tar.gz",
+   "files": [
+    {
+     "path": "data/raw/xcom/XCOM.tar.gz",
+     "url": "https://physics.nist.gov/PhysRefData/Xcom/XCOM.tar.gz",
+     "sha256": "b2bdd0608bbece4809a337b7264c85b7997f608a1f8e2181ce5201421efcc0de",
+     "bytes": 172805,
+     "retrieved_utc": "2026-10-11T15:03:42+00:00",
+     "retrieved_utc_from": "file mtime (no prior record)"
+    }
+   ],
+   "record_sha256": "c6f3af88458d08cd318a5f5ef1f08dc43a4caee65abcd9738a095d55f06c6eca"
+  },
+  "pymatgen_elements": {
+   "title": "pymatgen Element data: atomic mass and experimental density of the solid",
+   "data_class": "P1",
+   "retrieved_utc": "2026-10-11T15:22:53+00:00",
+   "package": {
+    "name": "pymatgen",
+    "version": "2026.9.24",
+    "distributions": {
+     "pymatgen": "2026.9.24",
+     "pymatgen-core": "2026.10.2",
+     "pymatgen-io-validation": "0.1.4"
+    },
+    "periodic_table_file": "periodic_table.json.gz",
+    "periodic_table_sha256": "b11669f8ccb0a9fe7647d9026ecbd30ee15ded7c464df828820a15768556d0aa"
+   },
+   "record_sha256": "19b4e0a5cb65b17850c742bdd1fe51fca205d85118ced638c833beacd412c2d5"
+  },
+  "rqr_trs457": {
+   "title": "IEC 61267 RQR radiation qualities (W anode), IAEA TRS-457 Table 6.2",
+   "data_class": "STD",
+   "files": [
+    {
+     "path": "data/raw/trs457/TRS457_web.pdf",
+     "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TRS457_web.pdf",
+     "sha256": "829b6c34f6aec400a36eac57e14da6ad97eeed9f3f389153b308c1751fa4cc6b",
+     "bytes": 4885328,
+     "retrieved_utc": "2026-10-11T15:02:00+00:00"
+    }
+   ],
+   "record_sha256": "c6d6d7d03389e4904e544ca13cc5afbafadfa68720fb3e83193874e444608c65"
+  }
+ },
+ "stats": {
+  "n_compounds": 154377,
+  "n_energies": 545,
+  "n_variants": 264,
+  "n_profile_rows": 40755528,
+  "n_spectra": 14,
+  "n_elements": 100,
+  "limit": null,
+  "elapsed_s": 3821.0
+ },
+ "outputs": [
+  {
+   "path": "data/processed/energy_keV.npy",
+   "bytes": 4488,
+   "sha256": "59bc380bb4f312f32165546e63dacb8f52fc253971785f86c76a622929c1c5c9"
+  },
+  {
+   "path": "data/processed/envelope.parquet",
+   "bytes": 30611,
+   "sha256": "08bedda1fda4d1a4d8856c66edb356e2229f66a61f5c0dc6428a00346a3d63e3",
+   "rows": 545
+  },
+  {
+   "path": "data/processed/index.parquet",
+   "bytes": 4501959,
+   "sha256": "0dc0756498fa111c96f5709a1b183b5aef8cfda510899d6a2e902dfbdcccf388",
+   "rows": 154377
+  },
+  {
+   "path": "data/processed/key_energies.parquet",
+   "bytes": 123450335,
+   "sha256": "19975f700dd03374e81c63ddbe71a1bdf6f2378fdf865e236af7f688b56938b3",
+   "rows": 1080639
+  },
+  {
+   "path": "data/processed/mu_rho_wcoh.npy",
+   "bytes": 336541988,
+   "sha256": "8001a76cedf0b6e13d31cd77a612572ed899c0daacbbf90c41157f7a0b8aca98"
+  },
+  {
+   "path": "data/processed/mu_rho_wocoh.npy",
+   "bytes": 336541988,
+   "sha256": "beb999a71d1846d722122a2da6f9d18ebcebbcb87bda9b529bff5cda7ebadb96"
+  },
+  {
+   "path": "data/processed/profile_variants.parquet",
+   "bytes": 10236,
+   "sha256": "a5f318cf4e043bd53b72120fb69e16df42b781ce0deaa1e0537c6744047b932f",
+   "rows": 264
+  },
+  {
+   "path": "data/processed/profiles.parquet",
+   "bytes": 731642879,
+   "sha256": "b570f0db3d71b5f044a13d41cc6433fecb88e599b0cfd6eabc64a40a6783945f",
+   "rows": 40755528
+  },
+  {
+   "path": "data/processed/spectra.parquet",
+   "bytes": 6542,
+   "sha256": "cc535194677561a7635c311a76a17843e11c958d029249f5d28e034bc0c7ad02",
+   "rows": 14
+  },
+  {
+   "path": "data/processed/spectrum_bins.parquet",
+   "bytes": 76014,
+   "sha256": "d86f63da685c18cf2c6b7dfe58d7dc2a86269f7c1fd3c77a499f64d7b90d2154",
+   "rows": 5700
+  },
+  {
+   "path": "data/processed/table_a_elements.parquet",
+   "bytes": 7626,
+   "sha256": "bd7ffb7cb8640b8bdc55cea9aa00c309c9d099966d1dcfe5075ddedb53bd3ffb",
+   "rows": 100
+  },
+  {
+   "path": "data/processed/table_b_compounds.parquet",
+   "bytes": 15749048,
+   "sha256": "af260e77b23e05a1d2ca50ecb914e7d76fe512b9d7f6ed2c0724b2a4bd82c8d4",
+   "rows": 154377
+  },
+  {
+   "path": "data/interim/elements/edges.parquet",
+   "bytes": 7672,
+   "sha256": "b04827cb1bb48d8c1a1f8b2b98ace1789fd634b58bf74faeb157d8b570d839aa",
+   "rows": 568
+  },
+  {
+   "path": "data/interim/elements/elements.parquet",
+   "bytes": 7626,
+   "sha256": "bd7ffb7cb8640b8bdc55cea9aa00c309c9d099966d1dcfe5075ddedb53bd3ffb",
+   "rows": 100
+  },
+  {
+   "path": "data/interim/elements/xsec_grid.npz",
+   "bytes": 3061484,
+   "sha256": "129596e1b2cb209df933ab1a4cc53d685f68c0f57bdb766cfef7d073daaadcb0"
+  },
+  {
+   "path": "data/interim/mp/composition.parquet",
+   "bytes": 6883612,
+   "sha256": "98340048b8f76f9cbc7c33f2c06ce55473a1f83ed1a0d5d4a4eda59db0c8da7b",
+   "rows": 534311
+  },
+  {
+   "path": "data/interim/mp/compounds.parquet",
+   "bytes": 15749048,
+   "sha256": "af260e77b23e05a1d2ca50ecb914e7d76fe512b9d7f6ed2c0724b2a4bd82c8d4",
+   "rows": 154377
+  },
+  {
+   "path": "data/interim/mp/mass_fractions.npz",
+   "bytes": 4053536,
+   "sha256": "9c427a00a1b448f2736766be98029b93358120632f8c63f6b82b2205a7d7f3bc"
+  },
+  {
+   "path": "data/interim/mp/mass_fractions_index.parquet",
+   "bytes": 1793518,
+   "sha256": "4418ac2e13b736d8641244f9ca9aac0123917b8538edab07ceacfd7af391d05e",
+   "rows": 154377
+  },
+  {
+   "path": "data/interim/references/air_muen.parquet",
+   "bytes": 4247,
+   "sha256": "e224851ee5d457defae61d9ddf88a0aa30258eee8ef6355f04fd7bb062e47854",
+   "rows": 38
+  }
+ ],
+ "manifest_regenerated_utc": "2026-10-11T17:56:59+00:00",
+ "manifest_note": "Regenerated after source-record provenance fixes (DECISIONS D-021b); data outputs unchanged from the build."
+}

@@ -1,0 +1,318 @@
+id: nist_srd126
+title: 'NIST SRD 126: X-ray mass attenuation and mass energy-absorption coefficients (air; validation
+  elements and compounds; material constants)'
+citation: J. H. Hubbell and S. M. Seltzer, Tables of X-Ray Mass Attenuation Coefficients and Mass Energy-Absorption
+  Coefficients (version 1.4), NIST Standard Reference Database 126, National Institute of Standards and
+  Technology, Gaithersburg, MD (online 1996, last data update July 2004), doi:10.18434/T4D01F. Originally
+  published as NISTIR 5632 (1995).
+doi: 10.18434/T4D01F
+version:
+  version: '1.4'
+  version_source: NIST recommended citation; the version number is not printed on the retrieved table
+    pages
+  last_data_update: July 2004
+  online_since: May 1996
+  date_source: cover.html (provenance_files)
+data_class: P1
+retrieval_method: official published HTML tables, each page retrieved once and archived; parsed with the
+  Python stdlib html.parser (HTML table cross-checked against the ASCII table on the same page). No bulk
+  file exists (data.nist.gov ark:/88434/mds01fkz7n holds only a DOI link); the XCOM web form is never
+  used. See DECISIONS D-004.
+licence: https://www.nist.gov/open/license
+checksum_note: sha256 is of the archived raw bytes. The server injects a script with a per-request token,
+  so a re-retrieval of an unchanged page has different raw bytes. content_sha256 (scripts removed, whitespace
+  collapsed; shieldmap.ingest.references.html_content_sha256) is stable and is what a rebuild verifies.
+files:
+- path: data/raw/srd126/ComTab_air.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/air.html
+  sha256: 21dd954092db203ca531a356320ce19fc5d3f6f63db80d2b50095971b32e7776
+  bytes: 9693
+  retrieved_utc: '2026-10-11T15:02:08+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: 9bcaf4cf0ff4c9de9272d8b36238db85e0715ed25312589210ab927b4f910bc0
+- path: data/raw/srd126/ElemTab_z13.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z13.html
+  sha256: 768734691ed8bfa5d81b356a6f8508ee5d3f2c0627ec37a32ef6dc7f34815614
+  bytes: 9329
+  retrieved_utc: '2026-10-11T15:02:10+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: d851d497fe6ef7fede455e3a012d8b23925aba8a4a199b42c1c2231aa02c190f
+- path: data/raw/srd126/ElemTab_z26.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z26.html
+  sha256: 9d379d355148ef345f4c5f7b925ffde9472e743fa54948cb8d61b21cae139d19
+  bytes: 9314
+  retrieved_utc: '2026-10-11T15:02:12+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: a53a20269e920ae558a0f84b126e7b45c256715a05048ff0197dd933a77967da
+- path: data/raw/srd126/ElemTab_z74.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z74.html
+  sha256: b2c3877a786948ddf69843da88004b5dd70d3354824efeab46a5e47aa5421a73
+  bytes: 12507
+  retrieved_utc: '2026-10-11T15:02:14+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: 55630b7a3cfa38494058ebb6f0451a4cb2f225b0f874496917ee73a906bc0153
+- path: data/raw/srd126/ElemTab_z82.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z82.html
+  sha256: e7c061aa650c972d2c56ba9c09b09377425770bd2214ba326a9d3de83134aa2c
+  bytes: 12353
+  retrieved_utc: '2026-10-11T15:02:15+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: 13ff87fc0cff1d914b569a4d269cd5f93fdb9487dfbb50d3841b41ca328de769
+- path: data/raw/srd126/ComTab_water.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/water.html
+  sha256: e7ed7aada382031a3430676d6f226ac75a6ff4e4e1083656c2a401311b21b54d
+  bytes: 8731
+  retrieved_utc: '2026-10-11T15:02:21+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: 5d77c7f49aab6c2aea04190e28a54f66e6cb5184a55d6f0487b0f64fca79f737
+- path: data/raw/srd126/ComTab_fluoride.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/fluoride.html
+  sha256: 42ac4ff6eaa121a03e473b16819952a8db3df197b168b5f630e43df453fb593e
+  bytes: 9847
+  retrieved_utc: '2026-10-11T15:02:23+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: f84cef29a2b9d2d31df21558002c417dbee8c870c39ce90ef2ab2891b0a86fd0
+- path: data/raw/srd126/ComTab_cesium.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/cesium.html
+  sha256: 385832ab34259e4526df6da0a5ab60af63f400da5d0e8a3bfca7e5c5322f9b2f
+  bytes: 14408
+  retrieved_utc: '2026-10-11T15:02:25+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: 9d862648f590fe8ca812bc8d6fee07186f90124cea285dafa6c5702e31449ecb
+- path: data/raw/srd126/ComTab_lithiumflu.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/lithiumflu.html
+  sha256: 9777d61e8e70beb5ee3e3769b428f009a9d7638395c0a3d086ce6ef0b3095401
+  bytes: 8849
+  retrieved_utc: '2026-10-11T15:02:26+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: 7557d985930aaac0187302ee2e4754e679fe3a49ca3e3b47c5bdaba7e544a572
+- path: data/raw/srd126/ComTab_gallium.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/gallium.html
+  sha256: 4adec687ffcfe342fe5f335d40f8324b10f03f74208a4e488ff2e8fc394e4a9d
+  bytes: 13030
+  retrieved_utc: '2026-10-11T15:02:28+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: 69c9b1e6d6b5adfa0d6585b31f2ea38111dbf05d505b9cf874a3dafa777dc828
+- path: data/raw/srd126/ComTab_telluride.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/telluride.html
+  sha256: 23131933004b660f38b90ad6c617a5949b4eac1df91422a3be60aea9890b92fe
+  bytes: 13624
+  retrieved_utc: '2026-10-11T15:02:30+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: 71c27379e9cbe8933b051ab633dfecf4dc9785e56af1830da82486dd89394951
+- path: data/raw/srd126/ComTab_mercuric.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/mercuric.html
+  sha256: c662b376e96c58ec1ca3f4cac2187a3cdbef40a713f6a1b0de3573f7e91df5ed
+  bytes: 15310
+  retrieved_utc: '2026-10-11T15:02:32+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: ab0b6c094e14e8abffd40d7ac8ef11f9771fd82b6e0e042d34a5063d2c9c98aa
+- path: data/raw/srd126/ComTab_gadolinium.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/gadolinium.html
+  sha256: 0e07420073f0957a85ab6b6e2d56dba35d64336d6e6ded07bfd8fa68140919cf
+  bytes: 13405
+  retrieved_utc: '2026-10-11T15:02:34+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: 0b713d7522664bb85186a5a4a52043df80867b17c8c482b725b43923b9e52173
+- path: data/raw/srd126/ComTab_calcium.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/calcium.html
+  sha256: b5113825fd771b3653782a76b76003d0af19f92c54fe6e2a68bfc9bafad9d1f0
+  bytes: 10060
+  retrieved_utc: '2026-10-11T15:02:36+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: f3e69065b4039310a8833ab808e3ea20f5273d8ac5d02705350920f55a749e1f
+- path: data/raw/srd126/ComTab_lithium.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/lithium.html
+  sha256: 68c11a0dcb86569aeeff1b3cefc33ca3dc8364a388bf039ef912d33c1343b70a
+  bytes: 8856
+  retrieved_utc: '2026-10-11T15:02:37+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: 6c55d049e79e896216dd87dc60c3e9bf4d58c27bc9c56a0299e485dae66f328a
+- path: data/raw/srd126/ComTab_magnesium.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/ComTab/magnesium.html
+  sha256: d137a0f38da969417b0391cfaa91a329f4dc5b07a937f254c066eef8e13ad069
+  bytes: 9690
+  retrieved_utc: '2026-10-11T15:02:39+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: 131487a14650774ff6be4b16dbe2f58c76812d081fcc2a51533e8dafb87a7641
+- path: data/raw/srd126/tab1.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/tab1.html
+  sha256: 9d6781a9cdb5510520b915e347e6e95647ec7fec729d05418beef4af08ee52ef
+  bytes: 13457
+  retrieved_utc: '2026-10-11T15:02:17+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: fb3b356dca1980edc47102b9671222975c474b72711835c144c7d4a305923b21
+- path: data/raw/srd126/tab2.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/tab2.html
+  sha256: a85c1518c9d7641a6d7811597e82e63b3246124de834824beaaa3c87e2dfd015
+  bytes: 16417
+  retrieved_utc: '2026-10-11T15:02:19+00:00'
+  retrieved_utc_from: file mtime (no prior record)
+  content_sha256: 667eb71c31c263a25c7361d87a9c0dd301108014f7c4cd1d76631f89dcfb57df
+provenance_files:
+- path: data/raw/srd126/cover.html
+  url: https://physics.nist.gov/PhysRefData/XrayMassCoef/cover.html
+  sha256: db98eb810a35999020dfd505d3ca2bcf1762f820abe5915073fb0783a0c63d87
+  bytes: 93019
+  retrieved_utc: '2026-10-11T15:05:03+00:00'
+  note: 'SRD 126 table of contents (now a www.nist.gov page). Retrieved for the database identification:
+    ''NIST Standard Reference Database 126'', ''Last Update to Data Content: July 2004'', ''Online: May
+    1996'', DOI 10.18434/T4D01F. Provenance only: never re-fetched by the build (the page is regenerated
+    upstream).'
+pages:
+  air:
+    page: ComTab/air.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Air, Dry'
+    heading: Air, Dry (Near Sea Level)
+    rows: 38
+    kind: mixture
+    Z: null
+    formula: null
+    tab2_name: Air, Dry (near sea level)
+  Al:
+    page: ElemTab/z13.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Aluminum'
+    heading: Aluminum Z = 13
+    rows: 38
+    kind: element
+    Z: 13
+    formula: Al
+    tab2_name: null
+  Fe:
+    page: ElemTab/z26.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Iron'
+    heading: Iron Z = 26
+    rows: 38
+    kind: element
+    Z: 26
+    formula: Fe
+    tab2_name: null
+  W:
+    page: ElemTab/z74.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Tungsten'
+    heading: Tungsten Z = 74
+    rows: 59
+    kind: element
+    Z: 74
+    formula: W
+    tab2_name: null
+  Pb:
+    page: ElemTab/z82.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Lead'
+    heading: Lead Z = 82
+    rows: 58
+    kind: element
+    Z: 82
+    formula: Pb
+    tab2_name: null
+  H2O:
+    page: ComTab/water.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Water, Liquid'
+    heading: Water, Liquid
+    rows: 36
+    kind: compound
+    Z: null
+    formula: H2O
+    tab2_name: Water, Liquid
+  CaF2:
+    page: ComTab/fluoride.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Calcium Fluoride'
+    heading: Calcium Fluoride
+    rows: 38
+    kind: compound
+    Z: null
+    formula: CaF2
+    tab2_name: Calcium Fluoride
+  CsI:
+    page: ComTab/cesium.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Cesium Iodide'
+    heading: Cesium Iodide
+    rows: 66
+    kind: compound
+    Z: null
+    formula: CsI
+    tab2_name: Cesium Iodide
+  LiF:
+    page: ComTab/lithiumflu.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Lithium Fluride'
+    heading: Lithium Fluride
+    rows: 36
+    kind: compound
+    Z: null
+    formula: LiF
+    tab2_name: Lithium Fluride
+  GaAs:
+    page: ComTab/gallium.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Gallium Arsenide'
+    heading: Gallium Arsenide
+    rows: 58
+    kind: compound
+    Z: null
+    formula: GaAs
+    tab2_name: Gallium Arsenide
+  CdTe:
+    page: ComTab/telluride.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Cadmium Telluride'
+    heading: Cadmium Telluride
+    rows: 59
+    kind: compound
+    Z: null
+    formula: CdTe
+    tab2_name: Cadmium Telluride
+  HgI2:
+    page: ComTab/mercuric.html
+    title: 'NIST: X-Ray Mass Attenuation Coef. - Mercuric Iodide'
+    heading: Mercuric Iodide
+    rows: 71
+    kind: compound
+    Z: null
+    formula: HgI2
+    tab2_name: Mercuric Iodide
+  Gd2O2S:
+    page: ComTab/gadolinium.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Gadolinium Oxysulfide'
+    heading: Gadolinium Oxysulfide
+    rows: 61
+    kind: compound
+    Z: null
+    formula: Gd2O2S
+    tab2_name: Gadolinium Oxysulfide
+  CaSO4:
+    page: ComTab/calcium.html
+    title: 'NIST: X-Ray Mass Attenuation Coefficients - Calcium Sulfate'
+    heading: Calcium Sulfate
+    rows: 40
+    kind: compound
+    Z: null
+    formula: CaSO4
+    tab2_name: Calcium Sulfate
+  Li2B4O7:
+    page: ComTab/lithium.html
+    title: 'NIST: X-Ray Mass Attenuation Coeff. - Lithium Tetraborate'
+    heading: Lithium Tetraborate
+    rows: 36
+    kind: compound
+    Z: null
+    formula: Li2B4O7
+    tab2_name: Lithium Tetraborate
+  MgB4O7:
+    page: ComTab/magnesium.html
+    title: 'NIST: X-Ray Mass Attenuation Coef. - Magnesium Tetraborate'
+    heading: Magnesium Tetraborate
+    rows: 39
+    kind: compound
+    Z: null
+    formula: MgB4O7
+    tab2_name: Magnesium Tetroborate
+outputs:
+  air_parquet: data/interim/references/air_muen.parquet
+  fixture_mu_rho: tests/fixtures/srd126_mu_rho.csv
+  fixture_materials: tests/fixtures/srd126_materials.csv
+notes:
+- 'Units: energy in keV (data.air) / MeV (fixture); mu_rho and muen_rho in cm2/g.'
+- 'Edge rows: the energy is repeated; edge_side ''below'' is the first row and ''above'' the labelled
+  second row. Compound/mixture labels carry Z (e.g. ''18 K'' = argon K edge).'
+- Formulas in the fixtures are assigned by shieldmap from the NIST material names; Table 2 names are kept
+  as printed (incl. 'Lithium Fluride' [sic], 'Magnesium Tetroborate' [sic]).
+# data.air (NIST SRD 126 air table) is not redistributed (NIST Standard Reference Data terms).
+# Restore it with: python scripts/restore_nist_srd126.py

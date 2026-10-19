@@ -1,0 +1,33 @@
+[project]
+name = "shieldmap"
+version = "1.0.0"
+description = "shieldmap"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "mp-api",
+    "pymatgen",
+    "spekpy",
+    "numpy",
+    "scipy",
+    "pandas",
+    "pyarrow",
+    "pyyaml",
+    "pytest",
+    "matplotlib",
+    "python-dotenv",
+    "pypdf",
+]
+
+[project.optional-dependencies]
+fixtures = ["mendeleev"]
+check = ["xraylib"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

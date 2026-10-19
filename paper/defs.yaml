@@ -1,0 +1,520 @@
+# Definitional numbers and counts for [def:NAME] / [count:NAME] tags (paper/CONVENTIONS.md).
+# Flat mapping NAME -> {value, unit, source}; value may be a list. Entries written by
+# shieldmap.analysis4b.tables are refreshed on every run; other entries are kept.
+T_target:
+  source: Table C headline target for Cs-137/Co-60 (variants 38/42) and single lines; analysis4.headline.HEAD_KEYS
+  unit: transmission (air kerma)
+  value: 0.01
+abs_delta_screen:
+  source: Phase 3 polymorph screen |delta| <= 0.2 (subset all_members_abs_delta_le_0.2; analysis4.headline.POLY_SUBSETS)
+  unit: fraction
+  value: 0.2
+abund_curve:
+  source: ABUND(a) curve range; headline rows H95-H98
+  unit: ppm
+  value:
+  - 0.1
+  - 10
+abund_threshold:
+  source: ABUND threshold of B6; analysis4.refsets.practical_sets (abund=(1.0,))
+  unit: ppm
+  value: 1
+abund_tier_hi:
+  source: B6@ABUND2 tier run; analysis3.density_model.TIER_SETS
+  unit: ppm
+  value: 2
+abund_tier_lo:
+  source: B6@ABUND0.5 tier run; analysis3.density_model.TIER_SETS
+  unit: ppm
+  value: 0.5
+affiliation_postcode:
+  source: 'Phase 4d author fields (handover_phase4d_coauthor_revision.md, Section 1A): postal code of the affiliation, not a result'
+  unit: postcode
+  value: 50275
+al_density:
+  source: Al density used for the HVL check (src/shieldmap/validation.py, rho = 2.70 g/cm3)
+  unit: g/cm3
+  value: 2.7
+amb_icsd_min:
+  source: AMB-ICSD3 membership threshold (analysis4b.revision, editor item 5)
+  unit: ICSD ids
+  value: 3
+anode_angles:
+  source: DIAG anode angles of the 36 tube variants; analysis3 tube variants (Phase 1 sweep inventory)
+  unit: degree
+  value:
+  - 10
+  - 12
+  - 16
+artefact_ehull_icsd:
+  source: artefact flag condition 3 (Phase 4a step 2)
+  unit: eV/atom
+  value: 0.3
+artefact_ehull_theoretical:
+  source: artefact flag condition 1 (Phase 3 P3-D-005; Phase 4a step 2)
+  unit: eV/atom
+  value: 0.1
+artefact_rho_factor:
+  source: 'artefact flag condition 2 (Phase 4a step 2): rho_MP > 1.05 x rho_max'
+  unit: factor
+  value: 1.05
+b4_size:
+  source: B4 membership, R2, primary (RAD strict); reports/phase4a/step3_practical.md §2 (data/phase4a/S/practical_membership.csv)
+  unit: entries
+  value: 29846
+b5_size:
+  source: B5 = B4 ∧ GAP(3.1) membership, R2; reports/phase4a/step3_practical.md §2
+  unit: entries
+  value: 5670
+b6_size:
+  source: B6 = B4 ∧ ABUND(1) membership, R2; reports/phase4a/step3_practical.md §2
+  unit: entries
+  value: 16267
+band_corners:
+  source: band = min-max envelope over 3 polymorph rules x 3 frontier kinds x coherent on/off; analysis4.refsets.bands
+  unit: combinations
+  value: 18
+baseline_min_density:
+  source: baseline eligibility, handover_phase2 §2.1
+  unit: g/cm3
+  value: 1.0
+co60_lines:
+  source: ENSDF Co-60 gamma lines; data/phase4a/mc/inputs/cases.json
+  unit: keV
+  value:
+  - 1173.228
+  - 1332.492
+cod_matched_compounds:
+  source: statement of H87 (Phase 3 COD density bias)
+  unit: compounds
+  value: 21489
+cod_revision:
+  source: COD bulk release rev. 297631 of 2025-02-07 (Phase 3 P3-D-004)
+  unit: revision
+  value: 297631
+copula_icc:
+  source: intraclass correlation of COD normal scores by chemical system (Gaussian-copula shared shock); reports/phase3/step10_density_model.md §1
+  unit: correlation
+  value: 0.381
+crc_edition:
+  source: CRC Handbook of Chemistry and Physics, 95th ed. (crustal abundance, P3)
+  unit: edition
+  value: 95
+cs137_line:
+  source: ENSDF Cs-137 (Ba-137m) gamma line; data/phase4a/mc/inputs/cases.json
+  unit: keV
+  value: 661.657
+density_draws:
+  source: Phase 3 density-model draws per tier run; analysis3.density_model.N_DRAWS
+  unit: draws
+  value: 5000
+diag_anode_angle:
+  source: diagnostic headline variant 13 (RQR6, 12°, 0.35 mm Pb); analysis4b.patches.HEADLINE_DIAG_VARIANT
+  unit: degree
+  value: 12
+diag_leaders:
+  source: distinct narrow-beam best B4 lanthanide compounds over the 36 DIAG variants (data/phase4b/fig4b_advantage_by_variant.csv, best_ln_narrow)
+  unit: compounds
+  value: 10
+diag_pb_target:
+  source: diagnostic headline variant 13 (RQR6, 12°, 0.35 mm Pb); analysis4b.patches.HEADLINE_DIAG_VARIANT
+  unit: mm Pb
+  value: 0.35
+diag_pb_targets:
+  source: DIAG Pb targets; analysis3 tube variants (36 = RQR5/6/8/9 x 3 angles x 3 Pb targets)
+  unit: mm Pb
+  value:
+  - 0.25
+  - 0.35
+  - 0.5
+diag_variants:
+  source: DIAG tube variants (RQR5/6/8/9 × 3 anode angles × 3 Pb targets); analysis4.headline (H41-H46 statements)
+  unit: variants
+  value: 36
+ehull_bins:
+  source: Phase 3 e_hull bins (analysis3.cod.EHULL_BINS) used in Fig. S1b
+  unit: eV/atom
+  value:
+  - 0
+  - 0.025
+  - 0.05
+  - 0.1
+energy_grid_nodes:
+  source: Phase 1 energy grid (Table C); reports/phase1/phase1_report.md §1
+  unit: nodes
+  value: 545
+energy_grid_range:
+  source: Phase 1 energy grid range 10 keV-15 MeV and its 200 keV break; reports/phase1/phase1_report.md §1
+  unit: keV (10, 200), MeV (15)
+  value:
+  - 10
+  - 200
+  - 15
+energy_grid_step:
+  source: Phase 1 energy grid, 10-200 keV in 0.5 keV steps; reports/phase1/phase1_report.md §1
+  unit: keV
+  value: 0.5
+excl_display_threshold:
+  source: display threshold of element-exclusion prices in Fig. S2 (figures4.fig4s_load_bearing_b4internal thresh=0.02)
+  unit: '%'
+  value: 2
+excl_elements:
+  source: data/phase4a/S/summary.json (excl_elements)
+  unit: elements
+  value: 69
+excl_topn:
+  source: 'element-exclusion set: every element in a B4 top 10 at any column; analysis4.refsets.EXCL_TOP'
+  unit: rank
+  value: 10
+frontier:
+  source: 'figure reference line: the B4 frontier itself (figstyle.figures)'
+  unit: '%'
+  value: 0
+frontier_median_n:
+  source: 'median50_clean frontier kind: median of the 50 best non-artefact members; analysis4.refsets'
+  unit: members
+  value: 50
+gap_precedent_eV:
+  source: 'gap thresholds of about 3 eV in transparent-conducting-oxide screens (Shield4D14: > 3.1 eV HSE06; Shield4D15: > 3 eV), reports/phase4d/references_4d.md'
+  unit: eV
+  value:
+  - 3
+  - 3.1
+gap_threshold:
+  source: GAP threshold; analysis4.refsets.practical_sets (constraint_mask('GAP', 3.1))
+  unit: eV
+  value: 3.1
+h_tolerance:
+  source: 'Phase 1 validation 2.4: homogeneity coefficients within 0.012 of IEC 61267 (reports/phase1/phase1_report.md, section 2)'
+  unit: absolute
+  value: 0.012
+hc_eV_nm:
+  source: hc = 1239.84 eV nm (CODATA, rounded), E = hc/lambda; 1239.84 / 400 = 3.0996 eV (Phase 4d, co-author point 1)
+  unit: eV nm
+  value: 1239.84
+hp_depth_mm:
+  source: depth of the personal dose equivalent Hp(10) (ICRU definition), named in the protection-quantity sentence
+  unit: mm
+  value: 10
+hvl_offset_pct:
+  source: 'Phase 1 validation 2.4: air-kerma HVL1 in Al with XCOM vs SpekPy, -0.83 to -1.11 % (reports/phase1/phase1_report.md, section 2)'
+  unit: '%'
+  value:
+  - -0.83
+  - -1.11
+identity_one:
+  source: 'figure reference line: ratio 1 / headline thickness (figstyle.figures)'
+  unit: ratio
+  value: 1
+kissel_zmin:
+  source: xraylib Kissel photoelectric cross sections used for Z >= 26 (reports/phase4a/step7_xs.md)
+  unit: Z
+  value: 26
+l_lines_below_keV:
+  source: 'Bi and Pb L-shell fluorescence lines lie below 16 keV (XCOM L1 edges: Bi 16.39 keV, Pb 15.86 keV); domain review R2 check 3'
+  unit: keV
+  value: 16
+ln_families:
+  source: single-lanthanide families (level ln) in data/phase4b/fig4a_families_v13.csv
+  unit: families
+  value: 14
+mc7_boot_draws:
+  source: Monte Carlo like-for-like joint bootstrap draws (E3 and c7; data/phase4b/revision/e3_like_for_like.csv n_boot, reports/phase4b/revision_mc_c7.md)
+  unit: draws
+  value: 4000
+mc7_hist_million:
+  source: 'Monte Carlo case c7_rqr6: photon histories in millions, 752400022; data/phase4b/mc_rev/summary.json (total_particles)'
+  unit: million histories
+  value: 752.400022
+mc7_points:
+  source: 'Monte Carlo case c7_rqr6 (revision O1-O3): slab points; data/phase4b/mc_rev/summary.json (n_points)'
+  unit: points
+  value: 22
+mc7_subruns:
+  source: 'Monte Carlo case c7_rqr6: independent sub-runs; data/phase4b/mc_rev/summary.json (n_subruns)'
+  unit: sub-runs
+  value: 236
+mc_boot_draws:
+  source: parametric bootstrap draws for Monte Carlo requirement SEs (src/shieldmap/analysis4/mc/compare.py, requirements(n_boot=2000))
+  unit: draws
+  value: 2000
+mc_cases:
+  source: Monte Carlo handover cases c1-c6; data/phase4a/mc/summary.json (cases_with_points)
+  unit: cases
+  value: 6
+mc_cases_all:
+  source: 'Monte Carlo cases: six handover cases c1-c6 (data/phase4a/mc/summary.json), the revision case c7_rqr6 (data/phase4b/mc_rev/summary.json) and the Phase 4d case c8_cs137_irw (data/phase4d/mc_c8/summary.json)'
+  unit: cases
+  value: 8
+mc_ci_z:
+  source: 'Monte Carlo statistical interval: ± 1.96 standard errors (95 %), P4B-D-007'
+  unit: standard errors
+  value: 1.96
+mc_lateral_half_width:
+  source: reflective planes at x, y = ±5 cm (Phase 4a mc_spot_check §1)
+  unit: cm
+  value: 5
+mc_line_threshold:
+  source: fl estimator line threshold (Phase 4a mc_spot_check §1)
+  unit: keV
+  value: 3.2029
+mc_min_subruns:
+  source: independent OpenMC sub-runs per slab point (minimum); reports/phase4a/mc_spot_check.md §1
+  unit: sub-runs
+  value: 10
+mc_photon_cutoff:
+  source: OpenMC photon cutoff (Phase 4a mc_spot_check §1)
+  unit: keV
+  value: 1
+mc_points:
+  source: Monte Carlo slab points of the handover cases; data/phase4a/mc/summary.json (n_points)
+  unit: points
+  value: 78
+mc_window_energy:
+  source: Monte Carlo case c5 monoenergetic energy in the Pb K-edge window (data/phase4a/mc/inputs/cases.json)
+  unit: keV
+  value: 89.5
+mc_xray_beams:
+  source: 'X-ray beams simulated with Monte Carlo: RQR5 (c3), RQR6 (c7), RQR8 (c4) (Supplementary Table S2)'
+  unit: beams
+  value: 3
+mendeleev_version:
+  source: mendeleev 1.3.0 (crustal abundance, isotopic abundances)
+  unit: version (1.3.0)
+  value: 1.3
+mfp_T001:
+  source: 'optical depth of the narrow-beam T = 0.01 slab for a single line: ln(1/0.01) = 4.605 mean free paths (definitional)'
+  unit: mfp
+  value: 4.605
+mono_lines:
+  source: single-line grid energies from 20 keV to 10 MeV; reports/phase4a/step2_artefacts.md (columns)
+  unit: energies
+  value: 511
+mono_range:
+  source: single-line energies of the price curves, 20 keV to 10 MeV (511 grid energies); reports/phase4a/step2_artefacts.md
+  unit: keV (20), MeV (10)
+  value:
+  - 20
+  - 10
+mp_entries:
+  source: non-deprecated Materials Project entries (Table B); reports/phase1/phase1_report.md §1
+  unit: entries
+  value: 154377
+mp_release:
+  source: Materials Project database version 2026.04.13 (Phase 1 step 0)
+  unit: release (2026.04.13)
+  value: 2026.04
+muen_interp_hvl_pct:
+  source: 'Phase 1 limitation 6 / D-015: the interpolation of air mu_en/rho is a 0.25 % sensitivity on HVL1 (reports/phase1/phase1_report.md, section 6)'
+  unit: '%'
+  value: 0.25
+natrad_elements:
+  source: data/phase4a/S/natrad_elements.csv (rows)
+  unit: elements
+  value: 84
+nicsd_Ba2SmSbO6:
+  source: n_icsd_ids of mp-6037 (Ba2SmSbO6), data/processed/table_b_compounds.parquet
+  unit: ICSD ids
+  value: 3
+nicsd_Ba4TbRuO43:
+  source: n_icsd_ids of mp-6049 (Ba4Tb(RuO4)3), data/processed/table_b_compounds.parquet (also data/phase4b/revision/e5_amb_lanthanide.csv)
+  unit: ICSD ids
+  value: 3
+nicsd_BaNdInO4:
+  source: n_icsd_ids of mp-1192583 (BaNdInO4), data/processed/table_b_compounds.parquet (also data/phase4b/revision/e5_amb_lanthanide.csv)
+  unit: ICSD ids
+  value: 1
+nicsd_Bi:
+  source: n_icsd_ids of mp-23152, data/processed/table_b_compounds.parquet
+  unit: ICSD ids
+  value: 8
+nicsd_BiOF:
+  source: n_icsd_ids of mp-23074, data/processed/table_b_compounds.parquet
+  unit: ICSD ids
+  value: 2
+nicsd_CeSnRh:
+  source: n_icsd_ids of mp-12374 (CeSnRh), data/processed/table_b_compounds.parquet
+  unit: ICSD ids
+  value: 3
+nicsd_CsAgO:
+  source: n_icsd_ids of mp-8666 (CsAgO), data/processed/table_b_compounds.parquet (also data/phase4b/revision/e5_amb_lanthanide.csv)
+  unit: ICSD ids
+  value: 2
+nicsd_CsSmO2:
+  source: n_icsd_ids of mp-7977 (CsSmO2), data/processed/table_b_compounds.parquet (also data/phase4b/revision/e5_amb_lanthanide.csv)
+  unit: ICSD ids
+  value: 1
+nicsd_HfO2:
+  source: n_icsd_ids of mp-352, data/processed/table_b_compounds.parquet
+  unit: ICSD ids
+  value: 11
+nicsd_Ir:
+  source: n_icsd_ids of mp-101, data/processed/table_b_compounds.parquet
+  unit: ICSD ids
+  value: 7
+nicsd_LaBi:
+  source: n_icsd_ids of mp-22926, data/processed/table_b_compounds.parquet
+  unit: ICSD ids
+  value: 4
+nicsd_LaHoO3:
+  source: n_icsd_ids of mp-756166 (LaHoO3), data/processed/table_b_compounds.parquet (also data/phase4b/revision/e5_amb_lanthanide.csv)
+  unit: ICSD ids
+  value: 4
+nicsd_Nd11Sn10:
+  source: n_icsd_ids of mp-1202367 (Nd11Sn10), data/processed/table_b_compounds.parquet
+  unit: ICSD ids
+  value: 2
+nicsd_Nd5Sn4:
+  source: n_icsd_ids of mp-569347 (Nd5Sn4), data/processed/table_b_compounds.parquet
+  unit: ICSD ids
+  value: 3
+nicsd_W:
+  source: n_icsd_ids of mp-91, data/processed/table_b_compounds.parquet
+  unit: ICSD ids
+  value: 14
+nicsd_single:
+  source: n_icsd_ids = 1 for PrSbPd mp-1018899, Pr3OsI3 mp-570779, Tb6IrI10 mp-1105727, Er6IrI10 mp-1188271, Ce5AgSn3 mp-1213880 (data/processed/table_b_compounds.parquet)
+  unit: ICSD ids
+  value: 1
+noh_b4_range_MeV:
+  source: 'single-line energy range over which NH3.H2O (MP H5NO) is the mass-thickness best_clean frontier of B4 (R2, coherent, Phase 4a flag): figstyle.figures.h5no_range("B4") = 984.4-2636.5 keV (Phase
+    4d caption check)'
+  unit: MeV
+  value:
+  - 0.984
+  - 2.637
+noh_compared_range_MeV:
+  source: 'single-line energy range over which NH3.H2O is a reference compound (either side) of a plotted B4-internal mass-thickness price: analysis4b.patches bands, min 800 keV (noh_from_kev), max 2876.0
+    keV (Phase 4d claim fidelity SF-1)'
+  unit: MeV
+  value:
+  - 0.8
+  - 2.876
+noh_from:
+  source: 'D3 switch point (P4B-D-015): Co-60 areal prices and areal curves at and above it use the H-excluded variant; analysis4b.patches.noh_from_kev()'
+  unit: MeV
+  value: 0.8
+openmc_version:
+  source: OpenMC 0.16.0 (Phase 4a step 5)
+  unit: version (0.16.0)
+  value: 0.16
+pair_fit_min:
+  source: 'Fig. S4: pair-production Z-exponent shown from 2 MeV (Phase 4a Fig. 1s, data/phase3/L/z_exponents.parquet)'
+  unit: MeV
+  value: 2
+pb_density:
+  source: Pb reference density, Phase 1 D-011 (pymatgen density_of_solid, P1)
+  unit: g/cm3
+  value: 11.34
+pb_k_edge:
+  source: Pb K edge (XCOM edges)
+  unit: keV
+  value: 88.0
+polymorph_formulas:
+  source: statement of H81 (Phase 3 R4.2 polymorph spread)
+  unit: formulas
+  value: 1212
+quad_pieces_rqr5:
+  source: discrete quadrature pieces of the RQR5 (12 deg) spectrum, data/processed/spectrum_bins.parquet (spectrum RQR5_th12); the Monte Carlo samples these energies
+  unit: pieces
+  value: 376
+quad_pieces_rqr8:
+  source: discrete quadrature pieces of the RQR8 (12 deg) spectrum, data/processed/spectrum_bins.parquet (spectrum RQR8_th12)
+  unit: pieces
+  value: 508
+rad_z_min:
+  source: no-stable-isotope rule (Tc, Pm, Z >= 84), handover_phase1 Table A is_radioactive
+  unit: Z
+  value: 84
+rho_max:
+  source: densest Phase 1 experimental element density (Ir); analysis3.density_model.RowModel.rho_max
+  unit: g/cm3
+  value: 22.65
+rqr_kv:
+  source: RQR5/6/8/9 tube voltages (IEC 61267 via TRS-457); reports/phase1/phase1_report.md §4
+  unit: kV
+  value:
+  - 70
+  - 80
+  - 100
+  - 120
+spekpy_cell0_kev:
+  source: lower edge of the first SpekPy cell, fluence below it dropped; physics.spectra.CELL0_KEV
+  unit: keV
+  value: 9.75
+spekpy_cell_kev:
+  source: SpekPy cell width used by the quadrature; physics.spectra (D-013)
+  unit: keV
+  value: 0.25
+spekpy_version:
+  source: SpekPy 2.5.4 (Phase 1 data-principle audit)
+  unit: version (2.5.4)
+  value: 2.5
+spread_floor:
+  source: display floor of the log spread axis in Fig. S5 (figstyle.figures)
+  unit: fraction
+  value: 0.0001
+stab_ehull:
+  source: STAB threshold; analysis4.refsets._b4_parts (constraint_mask('STAB', 0.05))
+  unit: eV/atom
+  value: 0.05
+t_targets:
+  source: radionuclide transmission targets (Table C sweep); reports/phase1/phase1_report.md §4
+  unit: transmission
+  value:
+  - 0.5
+  - 0.1
+  - 0.01
+  - 0.001
+textbook_materials:
+  source: ten textbook shielding materials of Phase 3/4a (data/phase4b/fig4a_textbook_v13.csv)
+  unit: materials
+  value: 10
+universe_entries:
+  source: baseline-eligible universe (rho >= 1, defined e_hull, no noble gas); reports/phase2/phase2_report.md §1
+  unit: entries
+  value: 151655
+universe_formulas:
+  source: distinct formulas of the baseline-eligible universe (rules R1/R2); reports/phase2/phase2_report.md §1
+  unit: formulas
+  value: 102806
+visible_limit_nm:
+  source: 'CIE S 017:2020 term 17-21-003 (Shield4D01): the lower limit of visible radiation lies between 360 nm and 400 nm; 400 nm gives the 3.1 eV threshold (Phase 4d, co-author point 1)'
+  unit: nm
+  value:
+  - 360
+  - 400
+xcom_port_validation_pct:
+  source: 'Phase 1 validation 2.1: XCOM port vs SRD 126 for Pb, W, Fe, Al at tabulated energies, <= 0.04 % (reports/phase1/phase1_report.md, section 2)'
+  unit: '%'
+  value: 0.04
+xcom_version:
+  source: NIST XCOM 3.1 standalone package (Phase 1 step 0)
+  unit: version
+  value: 3.1
+xraylib_version:
+  source: xraylib 4.3.0 (fluorescence data; cross-section sensitivity, Phase 4a step 7)
+  unit: version (4.3.0)
+  value: 4.3
+xs_window:
+  source: 'Fig. S6a: xraylib vs XCOM element comparison window 20-200 keV (data/phase4a/xs/element_ratio_20_200keV.csv)'
+  unit: keV
+  value:
+  - 20
+  - 200
+z_Ir:
+  source: atomic number of Ir (definitional; Phase 4d Monte Carlo coverage argument)
+  unit: atomic number
+  value: 77
+z_Ir_minus_z_W:
+  source: Z(Ir) - Z(W) = 77 - 74 (definitional; Phase 4d Table S3, case c8)
+  unit: atomic number
+  value: 3
+z_W:
+  source: atomic number of W (definitional; Phase 4d Monte Carlo coverage argument)
+  unit: atomic number
+  value: 74
+zero:
+  source: 'figure reference line: zero advantage (figstyle.figures)'
+  unit: '%'
+  value: 0

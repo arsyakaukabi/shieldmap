@@ -1,0 +1,112 @@
+id: rqr_trs457
+title: IEC 61267 RQR radiation qualities (W anode), IAEA TRS-457 Table 6.2
+citation: 'International Atomic Energy Agency, Dosimetry in Diagnostic Radiology: An International Code
+  of Practice, Technical Reports Series No. 457, IAEA, Vienna (2007), Table 6.2 ''Characterization of
+  radiation quality series RQR'' (printed p. 71, PDF p. 83). Values originate from IEC 61267:2005, Medical
+  diagnostic X-ray equipment - Radiation conditions for use in the determination of characteristics.'
+data_class: STD
+retrieval_method: official open document (IAEA publication PDF), table text extracted with pypdf
+licence: (c) IAEA 2007. The table rows are cited factual data and are not redistributed in bulk.
+files:
+- path: data/raw/trs457/TRS457_web.pdf
+  url: https://www-pub.iaea.org/MTCD/Publications/PDF/TRS457_web.pdf
+  sha256: 829b6c34f6aec400a36eac57e14da6ad97eeed9f3f389153b308c1751fa4cc6b
+  bytes: 4885328
+  retrieved_utc: '2026-10-11T15:02:00+00:00'
+extraction:
+  pdf_page: 83
+  printed_page: '71'
+  pdf_pages_total: 372
+  pdf_metadata:
+    CreationDate: D:20071024165546Z
+    Author: IAEA
+    Creator: FrameMaker 7.1
+    Producer: Acrobat Distiller 7.0.5 (Windows)
+    ModDate: D:20071029110944+01'00'
+    Title: STI/Pub/D457
+  table_title: TABLE 6.2. CHARACTERIZATION OF RADIATION QUALITY SERIES RQR
+  columns:
+  - Radiation quality
+  - X ray tube voltage (kV)
+  - First HVL (mm Al)
+  - Homogeneity coefficient (h)
+  raw_rows:
+  - RQR 2  40 1.42 0.81
+  - RQR 3  50 1.78 0.76
+  - RQR 4  60 2.19 0.74
+  - RQR 5*  70 2.58 0.71
+  - RQR 6  80 3.01 0.69
+  - RQR 7  90 3.48 0.68
+  - RQR 8 100 3.97 0.68
+  - RQR 9 120 5.00 0.68
+  - RQR 10 150 6.57 0.72
+  footnote: '* This value is generally selected as the reference radiation quality for unattenuated beams
+    for general radiography applications.'
+notes:
+- '''*'' on RQR 5 in the table marks the reference radiation quality for unattenuated beams in general
+  radiography (table footnote); it is stored as reference_quality in data.all.'
+- used = RQR 5, 6, 8, 9 (handover section 5.1).
+data:
+  all:
+  - name: RQR 2
+    kV: 40
+    hvl1_mm_al: 1.42
+    homogeneity_h: 0.81
+    reference_quality: false
+  - name: RQR 3
+    kV: 50
+    hvl1_mm_al: 1.78
+    homogeneity_h: 0.76
+    reference_quality: false
+  - name: RQR 4
+    kV: 60
+    hvl1_mm_al: 2.19
+    homogeneity_h: 0.74
+    reference_quality: false
+  - name: RQR 5
+    kV: 70
+    hvl1_mm_al: 2.58
+    homogeneity_h: 0.71
+    reference_quality: true
+  - name: RQR 6
+    kV: 80
+    hvl1_mm_al: 3.01
+    homogeneity_h: 0.69
+    reference_quality: false
+  - name: RQR 7
+    kV: 90
+    hvl1_mm_al: 3.48
+    homogeneity_h: 0.68
+    reference_quality: false
+  - name: RQR 8
+    kV: 100
+    hvl1_mm_al: 3.97
+    homogeneity_h: 0.68
+    reference_quality: false
+  - name: RQR 9
+    kV: 120
+    hvl1_mm_al: 5.0
+    homogeneity_h: 0.68
+    reference_quality: false
+  - name: RQR 10
+    kV: 150
+    hvl1_mm_al: 6.57
+    homogeneity_h: 0.72
+    reference_quality: false
+  used:
+  - name: RQR 5
+    kV: 70
+    hvl1_mm_al: 2.58
+    homogeneity_h: 0.71
+  - name: RQR 6
+    kV: 80
+    hvl1_mm_al: 3.01
+    homogeneity_h: 0.69
+  - name: RQR 8
+    kV: 100
+    hvl1_mm_al: 3.97
+    homogeneity_h: 0.68
+  - name: RQR 9
+    kV: 120
+    hvl1_mm_al: 5.0
+    homogeneity_h: 0.68

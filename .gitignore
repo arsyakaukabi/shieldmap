@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# local secrets (never commit)
+.env
+.env.*
+
+# raw upstream inputs (not redistributed; scripts/fetch_raw.py, python -m shieldmap.build)
+data/raw/
+data/interim/references/
+
+# restored locally (scripts/prepare.py); the release ships the compressed parts
+data/phase2/profiles_thickness.npy
+
+# rebuilt by the full pipeline (python -m shieldmap.build / analyze / analyze3 / analyze4a)
+data/processed/*
+!data/processed/MANIFEST.json
+!data/processed/energy_keV.npy
+!data/processed/profile_variants.parquet
+!data/processed/spectra.parquet
+!data/processed/table_a_elements.parquet
+!data/processed/table_b_compounds.parquet
+data/interim/*
+!data/interim/elements/
+data/interim/elements/*
+!data/interim/elements/elements.parquet
+
+# local reports, logs and build outputs written by the pipeline
+reports/
+paper/build/*
+!paper/build/number_usage.json
+paper/_*.tex
+data/phase4b/tables/

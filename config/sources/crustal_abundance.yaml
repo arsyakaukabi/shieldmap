@@ -1,0 +1,17 @@
+id: crustal_abundance
+title: Abundance of elements in the Earth's crust (mg/kg = ppm by mass)
+citation: W. M. Haynes (ed.), CRC Handbook of Chemistry and Physics, 95th ed., CRC Press, Boca Raton (2014),
+  section 14, 'Abundance of Elements in the Earth's Crust and in the Sea' (crust column), as distributed
+  in the mendeleev package (citation key haynes2014crc).
+data_class: P3
+retrieval_method: official package (PyPI mendeleev), frozen once into this fixture
+package:
+  name: mendeleev
+  version: 1.3.0
+  elements_db_sha256: 8a6312b57603e22c58ab28005bb8cacfbff721bc859eea8ddc2b784c17ffd717
+retrieved_utc: '2026-10-11T14:58:40+00:00'
+unit: mg/kg
+licence: 'mendeleev: MIT; values: CRC Handbook (factual data, cited)'
+notes: Elements without a tabulated value are null; nothing is imputed.
+# data.abundance_ppm (per-element crustal abundances, CRC Handbook via mendeleev) is not redistributed.
+# Restore it with: python scripts/restore_crustal_abundance.py

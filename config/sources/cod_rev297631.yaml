@@ -1,0 +1,30 @@
+id: cod_rev297631
+title: Crystallography Open Database (COD), full release archive, SVN revision 297631 (2025-02-07)
+citation: 'S. Gražulis, D. Chateigner, R. T. Downs, A. F. T. Yokochi, M. Quirós, L. Lutterotti, E. Manakova,
+  J. Butkus, P. Moeck, A. Le Bail, "Crystallography Open Database – an open-access collection of crystal
+  structures", J. Appl. Cryst. 42, 726–729 (2009). Release archive cod-rev297631-2025.02.07.txz.'
+data_class: P3
+retrieval_method: one bulk download of the release archive by resumable parallel HTTP range requests (8
+  connections, 128 MiB parts), MD5 verified over the ordered parts against the published md5sum.dat, parts
+  concatenated in order; no per-entry retrieval (DECISIONS P3-D-004)
+url: https://www.crystallography.net/archives/2025/data/cod-rev297631-2025.02.07.txz
+md5_list_url: https://www.crystallography.net/archives/md5sum.dat
+release_date: '2025-02-07'
+svn_revision: 297631
+files:
+- path: data/raw/cod/cod-rev297631-2025.02.07.txz
+  url: https://www.crystallography.net/archives/2025/data/cod-rev297631-2025.02.07.txz
+  bytes: 18481345940
+  md5_published: 10db38860747e2f8eeadd8e61d132d05
+  md5: 10db38860747e2f8eeadd8e61d132d05
+  sha256: 569fae5dc969ed688aa62950d481be71fa6195c39a08b550085c14d169d8525c
+  retrieval_first_part_finished_utc: '2026-10-11T19:58:38+00:00'
+  retrieval_last_part_finished_utc: '2026-10-12T02:17:47+00:00'
+  assembled_utc: '2026-10-12T02:20:55+00:00'
+licence: CC0 1.0 (COD data)
+use: Phase 3 Step 3 only. COD densities calibrate the density-uncertainty model (δ = ρ_MP/ρ_COD − 1) and the
+  Step 6 polymorph comparison; they never replace MP densities in Table B/C or the profile tables.
+verification: shieldmap.analysis3.cod.verify_archive() re-hashes the archive (SHA-256) on first use in every
+  run and refuses a mismatch (cod.COD_SHA256 mirrors the value above; tests check that they agree).
+notes: Mirrors data/raw/cod/SOURCE.json (git-ignored). The archive is listed in md5sum.dat with the same ETag
+  as cod-cifs-mysql.txz.

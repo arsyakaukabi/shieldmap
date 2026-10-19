@@ -1,0 +1,14 @@
+{
+ "chi2_narrow_vs_endf": 21.01573317136392,
+ "dof": 22,
+ "p_value": 0.5197659579363136,
+ "max_abs_z": 1.7294661823125947,
+ "n_beyond_2sigma": 0,
+ "ratio_narrow_mc_tablec_min": 0.9967717886380948,
+ "ratio_narrow_mc_tablec_max": 1.0206817015152032,
+ "ratio_endf_tablec_min": 0.9965892248462894,
+ "ratio_endf_tablec_max": 1.022091290643938,
+ "native_over_records_min": 1.0000006286674032,
+ "native_over_records_max": 1.0000012025631013,
+ "any_truncated": false
+}

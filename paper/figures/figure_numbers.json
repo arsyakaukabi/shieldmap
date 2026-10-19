@@ -1,0 +1,248 @@
+{
+ "note": "Every number printed inside a figure (annotations, labels), with its source tag (paper/CONVENTIONS.md). Tick labels and axis limits are not listed, except the T(x) tick labels of Fig. 1a. Checked by shieldmap.figstyle.figures.Numbers (half-up rounding or two significant figures). Phase 4c set: Fig1-4, GraphicalAbstract, FigS1-S3.",
+ "defs": {
+  "pb_k_edge": {
+   "value": 88.0,
+   "unit": "keV",
+   "meaning": "Pb K-edge energy (reference marker; = defs.yaml pb_k_edge)"
+  },
+  "cs137_line": {
+   "value": 661.7,
+   "unit": "keV",
+   "meaning": "Cs-137 line, marked at 661.7 keV (defs.yaml cs137_line = 661.657)"
+  },
+  "co60_mean": {
+   "value": 1252.85,
+   "unit": "keV",
+   "meaning": "mean of the Co-60 lines (defs.yaml co60_lines), the single Co-60 marker"
+  },
+  "zero": {
+   "value": 0.0,
+   "unit": "%",
+   "meaning": "zero price / zero advantage reference"
+  },
+  "identity_one": {
+   "value": 1.0,
+   "unit": "",
+   "meaning": "transmission 1 at the front face (Fig. 1a); x = 1, headline thickness (Fig. S3)"
+  },
+  "T_target": {
+   "value": 0.01,
+   "unit": "",
+   "meaning": "transmission target 0.01 (Fig. 1a T(x) curve; = defs.yaml T_target)"
+  },
+  "frontier": {
+   "value": 0.0,
+   "unit": "%",
+   "meaning": "B4 frontier (0 % above itself)"
+  },
+  "ehull_bins": {
+   "value": null,
+   "unit": "eV/atom",
+   "meaning": "Phase 3 e_hull bins (not drawn in Phase 4c)"
+  },
+  "excl_display_threshold": {
+   "value": 2.0,
+   "unit": "%",
+   "meaning": "Fig. S2 shows elements whose exclusion price reaches >= 2 % somewhere"
+  },
+  "amb_icsd_min": {
+   "value": 3.0,
+   "unit": "ICSD entries",
+   "meaning": "fully oxidised filter: at least 3 ICSD entries (revision E5)"
+  },
+  "mc_ci_z": {
+   "value": 1.96,
+   "unit": "",
+   "meaning": "Monte Carlo statistical interval ± 1.96 SE (= defs.yaml mc_ci_z)"
+  }
+ },
+ "figures": {
+  "Fig1a": [
+   {
+    "printed": "1",
+    "tag": "def:identity_one",
+    "where": "T(x) tick: transmission 1 at the front face",
+    "source_value": 1.0,
+    "match": true
+   },
+   {
+    "printed": "0.01",
+    "tag": "def:T_target",
+    "where": "T(x) tick: transmission 0.01 at the required thickness",
+    "source_value": 0.01,
+    "match": true
+   }
+  ],
+  "Fig1c": [
+   {
+    "printed": "235",
+    "tag": "H79",
+    "where": "crossover energy label",
+    "source_value": 235.14773149850188,
+    "match": true
+   }
+  ],
+  "Fig4a": [
+   {
+    "printed": "3",
+    "tag": "def:amb_icsd_min",
+    "where": "diamond label 'fully oxidised, >= 3 ICSD entries'",
+    "source_value": 3.0,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "def:frontier",
+    "where": "x = 0: B4 frontier",
+    "source_value": 0.0,
+    "match": true
+   }
+  ],
+  "Fig4b": [
+   {
+    "printed": "0",
+    "tag": "def:zero",
+    "where": "zero line (Bi)",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "3",
+    "tag": "def:amb_icsd_min",
+    "where": "x tick label 'fully oxidised lanthanide (>= 3 ICSD entries)'",
+    "source_value": 3.0,
+    "match": true
+   }
+  ],
+  "GraphicalAbstract": [
+   {
+    "printed": "1",
+    "tag": "def:T_target:pct",
+    "where": "left picture: T = 1 % (transmission target 0.01 as a per cent)",
+    "source_value": 1.0,
+    "match": true
+   },
+   {
+    "printed": "151 655",
+    "tag": "count:universe_entries",
+    "where": "left caption: number of crystals (baseline-eligible MP entries)",
+    "source_value": 151655.0,
+    "match": true
+   },
+   {
+    "printed": "3.1",
+    "tag": "def:gap_threshold",
+    "where": "row label: band gap >= 3.1 eV",
+    "source_value": 3.1,
+    "match": true
+   },
+   {
+    "printed": "1",
+    "tag": "def:abund_threshold",
+    "where": "row label: abundant elements >= 1 ppm",
+    "source_value": 1.0,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "H03",
+    "where": "row 1 thickness: lead-free",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "H05",
+    "where": "row 1 thickness: stable",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "H07",
+    "where": "row 1 thickness: observed",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "H04",
+    "where": "row 1 mass thickness: lead-free",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "H06",
+    "where": "row 1 mass thickness: stable",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "H08",
+    "where": "row 1 mass thickness: observed",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "23",
+    "tag": "H11",
+    "where": "row 2 thickness: abundant elements",
+    "source_value": 23.05140096733048,
+    "match": true
+   },
+   {
+    "printed": "15",
+    "tag": "H12",
+    "where": "row 2 mass thickness: abundant elements",
+    "source_value": 15.10010592543547,
+    "match": true
+   },
+   {
+    "printed": "135",
+    "tag": "H09",
+    "where": "row 3 thickness: transparent",
+    "source_value": 134.5812325060481,
+    "match": true
+   },
+   {
+    "printed": "5.0",
+    "tag": "H10",
+    "where": "row 3 mass thickness: transparent",
+    "source_value": 5.01802280665935,
+    "match": true
+   }
+  ]
+ },
+ "plotted_untagged": [
+  {
+   "figure": "Fig4b",
+   "what": "RQR6 step 1: Bi/Ce5AgSn3 - 1, MC narrow-beam estimator, like-for-like Pb target",
+   "value": 0.3555623247456316,
+   "source": "data/phase4b/mc_rev/metrics.csv: case_id c7_rqr6, target like-for-like, metric 'Bi/Ce5AgSn3 − 1', estimator narrow",
+   "headline_row": "none for this estimator; analytic narrow-beam counterpart H169 (35.33 %, Bi above the B4 frontier Ce5AgSn3 at v13); code checks |MC - H169| < 0.5 pp",
+   "printed": false
+  },
+  {
+   "figure": "Fig4b",
+   "what": "RQR6 elemental blend step 1: Bi/blend - 1, MC narrow-beam estimator, like-for-like",
+   "value": 0.3606918597951103,
+   "source": "data/phase4b/mc_rev/metrics.csv: case_id c7_rqr6, target like-for-like, metric 'Bi/SnBaGd_blend − 1', estimator narrow",
+   "headline_row": "none for this estimator; analytic narrow-beam counterpart H181 (blend vs Bi as X/Bi - 1 = -26.4 %, i.e. Bi/X - 1 = 35.9 %)",
+   "printed": false
+  },
+  {
+   "figure": "Fig4b",
+   "what": "RQR5 and RQR8 step 3 (open diamonds): Bi/X - 1 = 1/(1 + v) - 1 of the tagged X/Bi - 1 values",
+   "value": [
+    -0.06853422247785945,
+    0.19978004644581904
+   ],
+   "source": "H217, H219 (data/phase4b/revision/e5_amb_lanthanide.csv vs_Bi)",
+   "headline_row": "H217, H219 (same quantity, inverted ratio)",
+   "printed": false
+  }
+ ]
+}

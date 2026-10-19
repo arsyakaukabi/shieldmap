@@ -1,0 +1,19 @@
+{
+ "note": "Figures of a longer version of the manuscript, kept in the repository documentation. Images: phase4b_<name>.pdf/.png, rendered by render_docs_figures.py from figures_phase4b.py. Numbers printed in them: figure_numbers_phase4b.json. The docs text is written by hand.",
+ "moved_out_of_the_paper": {
+  "phase4b_FigS3": "headroom prices against F0, incl. the radioactive-element exclusion (actinide headroom), 9 panels",
+  "phase4b_FigS4": "Z-exponents behind the 235 keV crossover",
+  "phase4b_FigS5": "polymorph density spread, DFT vs measured",
+  "phase4b_FigS6": "cross-section library sensitivity (xraylib, ENDF/B-VIII.0 vs XCOM)",
+  "phase4b_Fig3": "panel b: decomposition 1 + price = density factor x composition factor (H150/H151); panel a also with narrow- and broad-beam MC points",
+  "phase4b_Fig4": "panel b: 36-variant advantage plot with first-order fluorescence markers and blend line; panel c: every MC pair under every estimator (fixed and like-for-like targets, first-order markers)"
+ },
+ "long_versions_of_figures_still_in_the_paper": {
+  "phase4b_Fig1": "pipeline schematic (a) and variance shares with bands and covariance (b)",
+  "phase4b_Fig2": "five-panel price figure with hatched areal bands",
+  "phase4b_FigS1": "density bias by class (a) and by energy above hull (b); Phase 4c Fig. S1 keeps (a)",
+  "phase4b_FigS2": "element-exclusion maps with in-map note; Phase 4c Fig. S2",
+  "phase4b_FigS7": "MC transmission, ratio and build-up panels; Phase 4c Fig. S3 keeps the ratio and build-up panels",
+  "phase4b_GraphicalAbstract": "paired-bar graphical abstract"
+ }
+}

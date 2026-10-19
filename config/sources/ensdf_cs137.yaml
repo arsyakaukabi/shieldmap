@@ -1,0 +1,168 @@
+id: ensdf_cs137
+title: ENSDF 137CS B- DECAY (daughter 137BA), gamma lines and absolute intensities
+citation: Evaluated Nuclear Structure Data File (ENSDF), National Nuclear Data Center, Brookhaven National
+  Laboratory; distribution ensdf_261001.zip (NNDC, 2026-10-01; file dated 2026-10-02), member ensdf.137,
+  dataset '137CS B- DECAY' (NUCID 137BA), evaluation by E. BROWNE, J. K. TULI, NDS 108,2173 (2007) [ENSDF
+  PUB '07NDS', date 200709]. doi:10.18139/nndc.ensdf/1845010.
+doi: 10.18139/nndc.ensdf/1845010
+data_class: P1
+retrieval_method: bulk download of the full NNDC ENSDF distribution (zip), parsed locally (ENSDF 80-column
+  format); no web form or API
+licence: ENSDF is produced by the US Nuclear Data Program and is publicly available (NNDC); cite the dataset
+  and DOI.
+files:
+- path: data/raw/ensdf/ensdf_261001.zip
+  url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/dist26/ensdf_261001.zip
+  sha256: 2546aefea0190587fdf4d7ceba30eea032e44b1a070b1c3b1ff804e57e913799
+  bytes: 42479053
+  retrieved_utc: '2026-10-11T15:01:58+00:00'
+provenance_files:
+- path: data/raw/ensdf/files.json
+  url: https://www.nndc.bnl.gov/ensdfarchivals/distributions/files.json
+  sha256: 63cf653a1970341be7f945c8561956c021c7006cdb890229ec84f9ee3990ed1d
+  bytes: 15686
+  retrieved_utc: '2026-10-11T15:01:59+00:00'
+  note: 'NNDC distribution index at retrieval time; shows ensdf_261001.zip as the latest distribution.
+    Provenance only: never re-fetched by the build (it changes upstream).'
+notes:
+- Absolute emission intensity per decay = RI x NR x BR / 100 (ENSDF normalization rule; PN NRBR overrides
+  when present). Uncertainties combined in quadrature, correlations ignored.
+- lines_used = the handover lines [661.657] keV, at ENSDF's own energies. ENSDF energies equal the nominal
+  values.
+- Only ENSDF G (gamma) records are included. X-rays (e.g. Ba K x-rays following 137Cs decay, Ni K x-rays
+  following 60Co decay) are not G records and are not included (see reports/phase1/wave1_C_references.md).
+data:
+  dataset:
+    member: ensdf.137
+    nucid: 137BA
+    dsid: 137CS B- DECAY
+    dsref: 1983BE18,1996BI23,1997WAZZ
+    pub: 07NDS
+    date: '200709'
+    id_record: 137BA    137CS B- DECAY                1983BE18,1996BI23,1997WAZZ07NDS    200709
+    history:
+    - TYP: ERR
+      AUT: J. Tuli
+      DAT: 10-Feb-2008
+      COM: fixed logft values
+    - TYP: ERR
+      AUT: J. Tuli
+      DAT: 17-Dec-2007
+      COM: fixed typos noted by PNPI
+    - TYP: FUL
+      AUT: E. BROWNE, J. K. TULI
+      CIT: NDS 108,2173 (2007)
+      CUT: 1-Oct-2006
+    evaluators: E. BROWNE, J. K. TULI
+    evaluation_citation: NDS 108,2173 (2007)
+    literature_cutoff: 1-Oct-2006
+    n_records: 57
+  parent:
+    nucid: 137CS
+    level_energy_keV: '0.0'
+    level_energy_unc: ''
+    jpi: 7/2+
+    half_life: 30.08 Y
+    half_life_unc: '9'
+    half_life_years: 30.08
+    q_keV: '1175.63'
+    q_unc: '17'
+    record: 137CS  P 0.0         7/2+              30.08 Y   9              1175.63   17
+  normalization:
+    N:
+      NR:
+        value: '1.0'
+        unc: ''
+        value_num: 1.0
+        unc_num: null
+        unc_flag: null
+      NT:
+        value: ''
+        unc: ''
+        value_num: null
+        unc_num: null
+        unc_flag: null
+      BR:
+        value: '1.0'
+        unc: ''
+        value_num: 1.0
+        unc_num: null
+        unc_flag: null
+      NB:
+        value: '1.0'
+        unc: ''
+        value_num: 1.0
+        unc_num: null
+        unc_flag: null
+      NP:
+        value: ''
+        unc: ''
+        value_num: null
+        unc_num: null
+        unc_flag: null
+    PN:
+      NRBR:
+        value: ''
+        unc: ''
+        value_num: null
+        unc_num: null
+        unc_flag: null
+      NTBR:
+        value: ''
+        unc: ''
+        value_num: null
+        unc_num: null
+        unc_flag: null
+      NBBR:
+        value: ''
+        unc: ''
+        value_num: null
+        unc_num: null
+        unc_flag: null
+      NP:
+        value: ''
+        unc: ''
+        value_num: null
+        unc_num: null
+        unc_flag: null
+      option: '3'
+      comment_flag: ''
+    N_record: 137BA  N 1.0                   1.0       1.0
+    PN_record: 137BA PN                                                                     3
+    rule: N NR x BR
+    multiplier_RI_to_per_100_decays: 1.0
+    multiplier_unc: 0.0
+  all_gamma_lines:
+  - energy_keV: 283.5
+    energy_unc_keV: 0.1
+    energy_unc_flag: null
+    ri: 0.00058
+    ri_unc: 8.0e-05
+    ri_unc_flag: null
+    multipolarity: null
+    intensity_per_decay: 5.8e-06
+    intensity_unc: 8.0e-07
+    record: 137BA  G 283.5      15.8E-4  8
+    used: false
+  - energy_keV: 661.657
+    energy_unc_keV: 0.003
+    energy_unc_flag: null
+    ri: 85.1
+    ri_unc: 0.2
+    ri_unc_flag: null
+    multipolarity: M4
+    intensity_per_decay: 0.851
+    intensity_unc: 0.002
+    record: 137BA  G 661.657   3 85.1     2M4                      0.1124
+    energy_matches_nominal: true
+    used: true
+  lines_used:
+  - energy_keV: 661.657
+    energy_unc_keV: 0.003
+    intensity_per_decay: 0.851
+    intensity_unc: 0.002
+  other_gamma_lines:
+    count: 1
+    intensity_sum_per_decay: 5.8e-06
+    intensity_sum_unc: 8.0e-07
+    fraction_of_used_lines: 6.816e-06

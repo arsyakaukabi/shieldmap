@@ -1,0 +1,13 @@
+case_id,variant_id,pair,metric,estimator,value,se,inside_bracket
+c3_rqr5,3,Bi/LaBi,advantage Bi/LaBi − 1 (R3.1 knife edge),narrow,0.1545265644084874,0.0004990968103736,True
+c3_rqr5,3,Bi/LaBi,advantage Bi/LaBi − 1 (R3.1 knife edge),cone1,0.1545992424800297,0.0005017395752921,True
+c3_rqr5,3,Bi/LaBi,advantage Bi/LaBi − 1 (R3.1 knife edge),cone3,0.1550653266884725,0.0005178728675304,True
+c3_rqr5,3,Bi/LaBi,advantage Bi/LaBi − 1 (R3.1 knife edge),fl,0.0854020431374715,0.0024947732161247,True
+c3_rqr5,3,Bi/LaBi,advantage Bi/LaBi − 1 (R3.1 knife edge),fl_all,0.102582315542931,0.0038522916226008,True
+c3_rqr5,3,Bi/LaBi,advantage Bi/LaBi − 1 (R3.1 knife edge),broad,0.1347864294219398,0.0043832712186899,True
+c4_rqr8,22,Bi/Pr3OsI3,advantage Bi/Pr3OsI3 − 1,narrow,0.4171300520001622,0.0008666382411989,True
+c4_rqr8,22,Bi/Pr3OsI3,advantage Bi/Pr3OsI3 − 1,cone1,0.4175915773667611,0.0008934128297914,True
+c4_rqr8,22,Bi/Pr3OsI3,advantage Bi/Pr3OsI3 − 1,cone3,0.4187301370963727,0.000884800260255,True
+c4_rqr8,22,Bi/Pr3OsI3,advantage Bi/Pr3OsI3 − 1,fl,0.2047019114510093,0.0034615021666182,True
+c4_rqr8,22,Bi/Pr3OsI3,advantage Bi/Pr3OsI3 − 1,fl_all,0.2304463010692174,0.0056275175903727,True
+c4_rqr8,22,Bi/Pr3OsI3,advantage Bi/Pr3OsI3 − 1,broad,0.2996554825973696,0.0037902087048292,True

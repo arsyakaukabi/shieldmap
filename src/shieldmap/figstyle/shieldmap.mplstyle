@@ -1,0 +1,92 @@
+# shieldmap publication style. Sizes are final print sizes.
+# Loaded by shieldmap.figstyle.helpers.use(); every figure goes through it.
+
+# --- typography -------------------------------------------------------------------------
+font.family          : sans-serif
+font.sans-serif      : Arial, DejaVu Sans
+font.size            : 7
+axes.labelsize       : 7
+axes.titlesize       : 7
+xtick.labelsize      : 6.5
+ytick.labelsize      : 6.5
+legend.fontsize      : 6.5
+legend.title_fontsize: 6.5
+figure.titlesize     : 7
+mathtext.fontset     : custom
+mathtext.rm          : Arial
+mathtext.it          : Arial:italic
+mathtext.bf          : Arial:bold
+mathtext.sf          : Arial
+mathtext.default     : regular
+axes.unicode_minus   : True
+text.color           : 222222
+axes.labelcolor      : 222222
+
+# --- axes: minimal ink, no frames ------------------------------------------------------
+axes.facecolor       : white
+axes.edgecolor       : 8C8C8C
+axes.linewidth       : 0.6
+axes.spines.top      : False
+axes.spines.right    : False
+axes.grid            : False
+axes.axisbelow       : True
+axes.labelpad        : 2.5
+axes.titlepad        : 3
+axes.xmargin         : 0
+axes.ymargin         : 0.02
+axes.prop_cycle      : cycler('color', ['1F4E79', 'D9822B', '222222', '9AA0A6'])
+grid.color           : E6E6E6
+grid.linewidth       : 0.4
+grid.linestyle       : -
+
+# --- ticks: outward, short ----------------------------------------------------------------
+xtick.direction      : out
+ytick.direction      : out
+xtick.major.size     : 2.5
+ytick.major.size     : 2.5
+xtick.minor.size     : 1.5
+ytick.minor.size     : 1.5
+xtick.major.width    : 0.6
+ytick.major.width    : 0.6
+xtick.minor.width    : 0.5
+ytick.minor.width    : 0.5
+xtick.major.pad      : 1.8
+ytick.major.pad      : 1.8
+xtick.color          : 8C8C8C
+ytick.color          : 8C8C8C
+xtick.labelcolor     : 222222
+ytick.labelcolor     : 222222
+xtick.minor.visible  : False
+ytick.minor.visible  : False
+
+# --- marks --------------------------------------------------------------------------------
+lines.linewidth      : 1.1
+lines.markersize     : 3.5
+lines.markeredgewidth: 0.4
+lines.solid_capstyle : round
+lines.dash_capstyle  : butt
+patch.linewidth      : 0
+scatter.edgecolors   : white
+image.cmap           : cividis
+hatch.linewidth      : 0.4
+
+# --- legends (used only when direct labels would collide) ------------------------------
+legend.frameon       : False
+legend.borderpad     : 0.2
+legend.borderaxespad : 0.3
+legend.handlelength  : 1.6
+legend.handletextpad : 0.5
+legend.labelspacing  : 0.3
+legend.columnspacing : 1.2
+
+# --- output ---------------------------------------------------------------------------------
+figure.facecolor     : white
+figure.dpi           : 150
+savefig.facecolor    : white
+savefig.dpi          : 600
+savefig.bbox         : standard
+savefig.pad_inches   : 0
+pdf.fonttype         : 42
+ps.fonttype          : 42
+pdf.compression      : 9
+svg.fonttype         : none

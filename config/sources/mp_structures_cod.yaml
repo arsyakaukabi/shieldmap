@@ -1,0 +1,28 @@
+id: mp_structures_cod
+title: Materials Project final structures of the eligible entries whose reduced formula occurs among the parsed
+  COD entries, database version 2026.04.13
+citation: 'A. Jain et al., "Commentary: The Materials Project: A materials genome approach to accelerating
+  materials innovation", APL Mater. 1, 011002 (2013), doi:10.1063/1.4812323. Database version 2026.04.13.'
+data_class: P2
+retrieval_method: official API (mp-api MPRester(use_document_model=False).materials.summary.search(material_ids=...,
+  fields=['material_id','structure'], chunk_size=1000)), 1000 ids per request, one retrieval
+url: https://api.materialsproject.org/materials/summary/
+database_version: 2026.04.13
+api_database_version: 2026.04.13
+retrieval_started_utc: '2026-10-12T02:42:42+00:00'
+retrieved_utc: '2026-10-12T02:50:30+00:00'
+packages:
+  mp-api: 0.46.5
+  emmet-core: 0.87.3
+  pymatgen: 2026.9.24
+files:
+- path: data/raw/mp/structures_cod_2026.04.13.jsonl.gz
+  sha256: 60db58cfe151f5f91a863608a941d4d2daa74ac70167fc18cda9794a47696317
+  n_requested: 32372
+  n_returned: 32372
+licence: Materials Project data, CC BY 4.0
+use: Phase 3 Step 3 structural matching only. Every structure's density is checked against Table B
+  (|Δρ/ρ| ≤ 1e-6); no structure-derived value enters the map.
+verification: shieldmap.analysis3.cod.verify_mp_structures() re-hashes the file on every reload against its
+  .meta.json and against cod.MP_STRUCT_SHA256 (mirrors the value above).
+notes: Mirrors data/raw/mp/structures_cod_2026.04.13.meta.json (git-ignored).

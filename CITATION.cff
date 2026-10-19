@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, together with the dataset. Licence: MIT, except src/shieldmap/ingest/xsec.py, which derives from the NIST XCOM program XCOM.f, keeps its non-commercial condition and is excluded from the MIT grant to that extent; see NOTICE. Data, documentation and figures: CC BY 4.0 (LICENSE-data)."
+type: software
+title: "shieldmap (v1.0)"
+version: "1.0"
+date-released: "2026-10-19"
+license: MIT
+repository-code: "https://github.com/arsyakaukabi/shieldmap"
+doi: "10.5281/zenodo.23430637"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23430637"
+    description: "Software (this repository, v1.0)"
+  - type: doi
+    value: "10.5281/zenodo.23457298"
+    description: "Dataset: map, headline tables and Monte Carlo records"
+authors:
+  - family-names: "Kaukabi"
+    given-names: "Mohamad Arsya"
+    orcid: "https://orcid.org/0000-0003-1307-0430"
+    affiliation: "Department of Physics, Faculty of Science and Mathematics, Diponegoro University, Semarang 50275, Indonesia"
+  - family-names: "Putra"
+    given-names: "Oki Ade"
+    orcid: "https://orcid.org/0009-0005-8170-1806"
+    affiliation: "Department of Physics, Faculty of Science and Mathematics, Diponegoro University, Semarang 50275, Indonesia"

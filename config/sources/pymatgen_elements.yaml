@@ -1,0 +1,18 @@
+id: pymatgen_elements
+title: 'pymatgen Element data: atomic mass and experimental density of the solid'
+citation: 'S. P. Ong et al., Python Materials Genomics (pymatgen): a robust, open-source python library
+  for materials analysis, Comput. Mater. Sci. 68, 314 (2013). Element.atomic_mass (IUPAC standard atomic
+  weights) and Element.density_of_solid (experimental solid density, kg m^-3).'
+data_class: P1
+retrieval_method: official package (PyPI pymatgen)
+package:
+  name: pymatgen
+  version: 2026.9.24
+  distributions:
+    pymatgen: 2026.9.24
+    pymatgen-core: 2026.10.2
+    pymatgen-io-validation: 0.1.4
+  periodic_table_file: periodic_table.json.gz
+  periodic_table_sha256: b11669f8ccb0a9fe7647d9026ecbd30ee15ded7c464df828820a15768556d0aa
+retrieved_utc: '2026-10-11T15:22:53+00:00'
+licence: MIT

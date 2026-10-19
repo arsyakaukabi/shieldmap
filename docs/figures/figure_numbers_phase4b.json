@@ -1,0 +1,245 @@
+{
+ "figures": {
+  "Fig1b": [
+   {
+    "printed": "235",
+    "tag": "H79",
+    "where": "crossover energy label",
+    "source_value": 235.14773149850188,
+    "match": true
+   }
+  ],
+  "Fig3a": [
+   {
+    "printed": "135",
+    "tag": "H09",
+    "where": "GAP thickness price at Cs-137 (label)",
+    "source_value": 134.5812325060481,
+    "match": true
+   },
+   {
+    "printed": "5.0",
+    "tag": "H10",
+    "where": "GAP areal-mass price at Cs-137 (label)",
+    "source_value": 5.01802280665935,
+    "match": true
+   }
+  ],
+  "Fig3b": [
+   {
+    "printed": "1",
+    "tag": "def:identity_one",
+    "where": "label '1 + price'",
+    "source_value": 1.0,
+    "match": true
+   },
+   {
+    "printed": "2.46",
+    "tag": "H150",
+    "where": "density factor at Cs-137",
+    "source_value": 2.458419823269729,
+    "match": true
+   },
+   {
+    "printed": "0.95",
+    "tag": "H151",
+    "where": "composition factor at Cs-137",
+    "source_value": 0.954195164377062,
+    "match": true
+   }
+  ],
+  "Fig4a": [
+   {
+    "printed": "3",
+    "tag": "def:amb_icsd_min",
+    "where": "ambient-tier row note (>= 3 ICSD entries)",
+    "source_value": 3.0,
+    "match": true
+   },
+   {
+    "printed": "−0.45",
+    "tag": "H180",
+    "where": "elemental blend vs the B4 frontier, v13, narrow beam (label)",
+    "source_value": -0.4466598616532999,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "def:frontier",
+    "where": "x = 0: B4 frontier",
+    "source_value": 0.0,
+    "match": true
+   }
+  ],
+  "Fig4b": [
+   {
+    "printed": "0",
+    "tag": "def:zero",
+    "where": "zero line (direction of the advantage)",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "0.25/0.35/0.50",
+    "tag": "def:diag_pb_targets",
+    "where": "x tick labels (Pb targets)",
+    "source_value": null,
+    "match": true
+   },
+   {
+    "printed": "10°/12°/16°",
+    "tag": "def:anode_angles",
+    "where": "x label (anode-angle order within each group)",
+    "source_value": null,
+    "match": true
+   }
+  ],
+  "Fig4c": [
+   {
+    "printed": "1.96",
+    "tag": "def:mc_ci_z",
+    "where": "error-bar key (± 1.96 SE)",
+    "source_value": 1.96,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "def:zero",
+    "where": "x = 0 line (Bi as light as the compound)",
+    "source_value": 0.0,
+    "match": true
+   }
+  ],
+  "GraphicalAbstract": [
+   {
+    "printed": "0",
+    "tag": "H03",
+    "where": "Lead-free: thickness price",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "H04",
+    "where": "Lead-free: areal-mass price",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "H05",
+    "where": "Stable: thickness price",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "H06",
+    "where": "Stable: areal-mass price",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "H07",
+    "where": "Observed: thickness price",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "0",
+    "tag": "H08",
+    "where": "Observed: areal-mass price",
+    "source_value": 0.0,
+    "match": true
+   },
+   {
+    "printed": "135",
+    "tag": "H09",
+    "where": "Transparent, thickness price",
+    "source_value": 134.5812325060481,
+    "match": true
+   },
+   {
+    "printed": "5.0",
+    "tag": "H10",
+    "where": "Transparent, areal-mass price",
+    "source_value": 5.01802280665935,
+    "match": true
+   },
+   {
+    "printed": "23",
+    "tag": "H11",
+    "where": "Scarcity proxy, thickness price",
+    "source_value": 23.05140096733048,
+    "match": true
+   },
+   {
+    "printed": "15",
+    "tag": "H12",
+    "where": "Scarcity proxy, areal-mass price",
+    "source_value": 15.10010592543547,
+    "match": true
+   }
+  ],
+  "FigS1b": [
+   {
+    "printed": "0/0.025/0.05/0.1",
+    "tag": "def:ehull_bins",
+    "where": "e_hull bin labels (Phase 3 cod.EHULL_BINS)",
+    "source_value": null,
+    "match": true
+   }
+  ],
+  "FigS1a": [
+   {
+    "printed": "−2.5",
+    "tag": "H87",
+    "where": "median delta, all compounds",
+    "source_value": -2.499481217827304,
+    "match": true
+   }
+  ],
+  "FigS4": [
+   {
+    "printed": "235",
+    "tag": "H79",
+    "where": "crossover energy label (both panels)",
+    "source_value": 235.14773149850188,
+    "match": true
+   }
+  ],
+  "FigS5": [
+   {
+    "printed": "0.2",
+    "tag": "def:abs_delta_screen",
+    "where": "legend: |delta| > 0.2",
+    "source_value": 0.2,
+    "match": true
+   },
+   {
+    "printed": "0.0001",
+    "tag": "def:spread_floor",
+    "where": "plot floor note",
+    "source_value": 0.0001,
+    "match": true
+   }
+  ],
+  "FigS7c": [
+   {
+    "printed": "2.29",
+    "tag": "H124",
+    "where": "Pb build-up factor at the headline thickness (Cs-137)",
+    "source_value": 2.2862060267146105,
+    "match": true
+   },
+   {
+    "printed": "1",
+    "tag": "def:identity_one",
+    "where": "x = 1: headline thickness (vertical line)",
+    "source_value": 1.0,
+    "match": true
+   }
+  ]
+ }
+}

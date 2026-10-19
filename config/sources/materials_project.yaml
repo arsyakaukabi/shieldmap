@@ -1,0 +1,84 @@
+id: materials_project
+title: Materials Project summary collection, database version 2026.04.13
+citation: 'A. Jain, S. P. Ong, G. Hautier, W. Chen, W. D. Richards, S. Dacek, S. Cholia, D. Gunter, D.
+  Skinner, G. Ceder, K. A. Persson, "Commentary: The Materials Project: A materials genome approach to
+  accelerating materials innovation", APL Mater. 1, 011002 (2013), doi:10.1063/1.4812323. Database version
+  2026.04.13.'
+data_class: P2
+retrieval_method: official API (mp-api MPRester.materials.summary.search)
+url: https://api.materialsproject.org
+database_version: 2026.04.13
+retrieved_utc: '2026-10-11T15:05:30+00:00'
+retrieval_started_utc: '2026-10-11T15:03:49+00:00'
+packages:
+  mp-api: 0.46.5
+  emmet-core: 0.87.3
+  pymatgen: 2026.9.24
+query:
+  filter:
+    deprecated: false
+    include_gnome: true
+  fields:
+  - material_id
+  - formula_pretty
+  - chemsys
+  - composition
+  - composition_reduced
+  - elements
+  - nelements
+  - density
+  - volume
+  - nsites
+  - energy_above_hull
+  - formation_energy_per_atom
+  - is_stable
+  - theoretical
+  - database_IDs
+  - band_gap
+  - is_gap_direct
+  - is_metal
+  - symmetry
+  - deprecated
+  chunk_size: 1000
+n_docs: 154377
+n_deprecated_count_query: 8834
+thermo_scheme: GGA_GGA+U_R2SCAN
+thermo_scheme_evidence:
+  method: summary.energy_above_hull compared with materials.thermo.search(material_ids, thermo_types=[t])
+    for a fixed random sample of material_ids
+  sample_seed: 20261011
+  sample_n: 200
+  tolerance_eV_atom: 1.0e-06
+  checked_utc: '2026-10-11T15:05:36+00:00'
+  by_thermo_type:
+    GGA_GGA+U_R2SCAN:
+      n_returned: 199
+      n_compared: 199
+      n_agree: 199
+      agree_fraction: 1.0
+      max_abs_diff_eV_atom: 0.0
+    GGA_GGA+U:
+      n_returned: 199
+      n_compared: 199
+      n_agree: 147
+      agree_fraction: 0.7386934673366834
+      max_abs_diff_eV_atom: 0.03876019926666974
+    R2SCAN:
+      n_returned: 46
+      n_compared: 46
+      n_agree: 37
+      agree_fraction: 0.8043478260869565
+      max_abs_diff_eV_atom: 0.3241341459090865
+material_id_note: API returns AlphaID strings (mp-aaaaaaft); material_id in Table B is emmet.core.mpid.AlphaID(id).string
+  (mp-149); raw string kept in material_id_api.
+licence: CC BY 4.0 (Materials Project data)
+files:
+- path: data/raw/mp/summary_2026.04.13.jsonl.gz
+  sha256: 5952010143439e159a37154b4a7421a1ca4dca2b9be53a1fe00fafeb0db39397
+  bytes: 14462011
+- path: data/raw/mp/summary_2026.04.13.meta.json
+  sha256: 691406677c62f0aa14e703fad5312d2f2c33c007a85eaa2defb139270ea08d83
+  bytes: 1177
+- path: data/raw/mp/thermo_check_2026.04.13.json
+  sha256: d54ea80da6172ebacdf0f4598283f01c7d91b93951b408e655694c64f6194f16
+  bytes: 20559

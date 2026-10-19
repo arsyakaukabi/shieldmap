@@ -1,0 +1,27 @@
+shieldmap: licence notice
+
+1. src/shieldmap/ingest/xsec.py
+
+The evaluation path in this file (main program, labels 220-600, and the subroutines SCOF/BSPOL/BLIN) is a
+line-by-line port of XCOM.f, the program distributed with the NIST XCOM photon cross-section database (NIST
+Standard Reference Database 8). The header of XCOM.f states: "Copyright 1999, Martin J. Berger. Permission is
+given to use the program for non-commercial purposes." To the extent that it derives from XCOM.f, xsec.py is
+excluded from the MIT grant in LICENSE and carries the same non-commercial condition. Everything else in src/,
+scripts/, tests/, paper/*.py and docs/figures/*.py is under the MIT licence.
+
+2. Upstream data
+
+No raw upstream file is redistributed. The NIST XCOM package, the NIST SRD 126 tables, the Materials Project
+snapshot, the Crystallography Open Database archive, the ENSDF distribution, the ENDF/B-VIII.0 library and the
+IAEA TRS-457 report are fetched from their providers and verified by SHA-256 (scripts/fetch_raw.py,
+config/sources/*.yaml). The NIST SRD 126 air table and test fixtures, and the per-element crustal abundances
+(CRC Handbook via mendeleev), are restored by scripts/restore_nist_srd126.py and
+scripts/restore_crustal_abundance.py. ICSD collection codes are not distributed; only the Materials Project's
+ICSD-match flag and the number of ICSD codes it lists per entry appear.
+
+3. Derived tables
+
+Compound-level tables derived from these sources are distributed under CC BY 4.0 (LICENSE-data) with the
+attribution in README.md. NIST is the source of the photon cross sections and air energy-absorption
+coefficients from which the compound-level values were computed.
+
